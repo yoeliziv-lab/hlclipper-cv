@@ -37,3 +37,22 @@ strong{color:var(--text-main)}
 body{padding:0}.container{box-shadow:none;max-width:100%;border-radius:0;padding:14px}.btn-download{display:none}
 table{page-break-inside:auto}tr{page-break-inside:avoid}
 h2{page-break-after:avoid}}
+@media (max-width:760px){
+body{padding:10px;font-size:16px;line-height:1.55}
+.container{padding:15px;border-radius:10px}
+h1{font-size:1.7rem}
+h2{font-size:1.15rem}
+.player-id-bar{font-size:.95rem;padding:9px 12px}
+.date-range{font-size:.85rem}
+table{font-size:.95rem}
+th,td{padding:7px 6px}
+.games-grid{flex-direction:column;gap:10px}
+.games-grid table{font-size:.9rem}
+.games-grid th,.games-grid td{padding:6px 5px}
+.games-grid td:nth-child(2){max-width:none}
+.header-actions{flex-direction:column;align-items:stretch;gap:10px}
+.header-actions img{order:0;align-self:flex-start;width:110px}
+.disclaimer,.verify-line,.print-note{font-size:.9rem}
+/* ⚠️ טבלה רחבה בטלפון: גלילה אופקית במקום דחיסה ללא-קריאה */
+table{display:block;overflow-x:auto;-webkit-overflow-scrolling:touch}
+}
