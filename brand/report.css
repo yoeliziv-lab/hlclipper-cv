@@ -3,7 +3,7 @@
 body{font-family:'Segoe UI','Arial',sans-serif;background:var(--bg-primary);color:var(--text-main);margin:0;padding:20px;direction:rtl;line-height:1.6}
 .container{max-width:900px;margin:0 auto;background:var(--bg-card);padding:30px;border-radius:12px;box-shadow:0 10px 25px rgba(0,0,0,.5);border:1px solid var(--border-color)}
 .header-actions{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:20px;border-bottom:2px solid var(--border-color);padding-bottom:15px}
-.header-actions img{width:96px;height:auto;max-height:132px;object-fit:contain;border-radius:8px;border:2px solid var(--accent-blue)}
+.header-actions img{width:150px !important;height:auto !important;aspect-ratio:3/4 !important;object-fit:cover !important;object-position:top center !important;border-radius:14px !important;background:#0f1216;border:1px solid var(--border-color) !important}
 .header-actions img{order:9}
 h1{color:var(--accent-blue);font-size:2.3rem;line-height:1.15;margin:0 0 6px}
 .date-range{color:var(--text-muted);font-size:.9rem;margin-bottom:8px}
@@ -44,15 +44,25 @@ h1{font-size:1.7rem}
 h2{font-size:1.15rem}
 .player-id-bar{font-size:.95rem;padding:9px 12px}
 .date-range{font-size:.85rem}
-table{font-size:.95rem}
-th,td{padding:7px 6px}
+table{font-size:.82rem}
+th,td{padding:5px 4px}
 .games-grid{flex-direction:column;gap:10px}
 .games-grid table{font-size:.9rem}
 .games-grid th,.games-grid td{padding:6px 5px}
 .games-grid td:nth-child(2){max-width:none}
 .header-actions{flex-direction:column;align-items:stretch;gap:10px}
-.header-actions img{order:0;align-self:flex-start;width:110px}
+.header-actions img{order:0 !important;align-self:flex-start;width:110px !important}
 .disclaimer,.verify-line,.print-note{font-size:.9rem}
-/* ⚠️ טבלה רחבה בטלפון: גלילה אופקית במקום דחיסה ללא-קריאה */
-table{display:block;overflow-x:auto;-webkit-overflow-scrolling:touch}
+.verify-line{white-space:normal !important}
+/* ⚠️ נמדד 27/09 על הדוח החי ב-375px: הדף עצמו נכנס, אבל כל
+   טבלה הפכה לתיבה נגללת-לצד (display:block) - וזה בדיוק מה שהמשתמש
+   תיאר כ'לגלול הצידה בכל מיני קטעים'. עכשיו הטבלה **מתכווצת**:
+   גופן קטן, ריפוד צר ושבירת-שורות בתאים. ה-!important גובר על
+   עיצוב שהמודל כתב בעצמו בתוך התגיות. */
+table{display:table !important;width:100% !important;table-layout:auto;border-collapse:collapse}
+th,td{white-space:normal !important;word-break:break-word;line-height:1.3}
+/* טבלה של 9 עמודות ומעלה לא נכנסת גם כך (נמדדה אחת של 11: 585px
+   תוכן ב-355px). רק לה - גופן קטן עוד יותר, וגלילה פנימית כמוצא
+   אחרון. המפרט אוסר עליה מעכשיו, אז זה חל רק על דוחות ישנים. */
+table:has(tr>*:nth-child(9)){display:block !important;overflow-x:auto;font-size:.7rem}
 }
