@@ -2,31 +2,46 @@
 <html lang="en" dir="ltr">
 <head>
   <meta charset="utf-8">
-  <title>Nitai Rosenberg Report</title>
+  <title>Nitai Rosenberg - Game Performance Report</title>
   <link rel="stylesheet" href="https://clipiq.co.il/brand/report-en.css">
   <style>
-    @page { size: A4; margin: 1.6cm; }
-    @media print { .btn-download { display: none; } }
+    @page {
+      size: A4;
+      margin: 1.6cm;
+    }
+    @media print {
+      .btn-download, .print-instruction {
+        display: none !important;
+      }
+    }
   </style>
 </head>
-<body style="direction: ltr;">
-<div class='cq-nav' dir='ltr' style='display:flex;gap:8px;flex-wrap:wrap;justify-content:center;align-items:center;padding:11px 96px;margin:0 0 14px;background:#0f172a;border-bottom:1px solid #1e293b;font:600 13px system-ui'><a href='index-en.html' style='display:inline-block;text-decoration:none;padding:5px 13px;border-radius:999px;border:1px solid #334155;color:#cbd5e1;background:transparent'>Player Card</a><a href='scout-en.html' style='display:inline-block;text-decoration:none;padding:5px 13px;border-radius:999px;border:1px solid #334155;color:#cbd5e1;background:transparent'>Scouting Sheet</a><a href='game-en.html' style='display:inline-block;text-decoration:none;padding:5px 13px;border-radius:999px;border:1px solid #38bdf8;color:#0b1220;background:#38bdf8'>Game Report</a><a href='game-en.pdf' download='ClipIQ_Nitai_Rosenberg_GameReport_EN.pdf' style='display:inline-block;text-decoration:none;padding:5px 13px;border-radius:999px;border:1px solid #2f6d4a;color:#9ad2a9'>PDF ⬇</a></div>
-  <div class='cq-brand' style='display:flex;align-items:center;justify-content:space-between;gap:12px;margin:0 0 14px'><img src='https://clipiq.co.il/brand/logo_lockup_h_light.png' alt='ClipIQ' style='height:52px;width:auto'><span style='font:600 12px system-ui;color:#94a3b8'>Nitai Rosenberg · Maccabi Rehovot vs Hapoel Hevel Modiin</span></div>
+<body>
 
+<div class='cq-brand' style='display:flex;align-items:center;justify-content:space-between;gap:12px;margin:0 0 14px'><img src='https://clipiq.co.il/brand/logo_lockup_h_light.png' alt='ClipIQ' style='height:52px;width:auto'><span style='font:600 12px system-ui;color:#94a3b8'>Nitai Rosenberg · Maccabi Rehovot vs Hapoel Hevel Modiin</span></div>
+
+<div class="container">
   <div class="header-actions">
     <div>
       <h1>Nitai Rosenberg</h1>
-      <div class="player-id-bar">Regular Season · Round 2 · SF · 20 MIN · Maccabi Rehovot vs Hapoel Hevel Modiin · Home · Loss 86-89 · 2026-09-23</div>
+      <div class="player-id-bar">
+        Regular Season · Round 2 · Small Forward · 20 MIN · Maccabi Rehovot vs Hapoel Hevel Modiin · Home · Loss 86-89 · 2026-09-23
+      </div>
       <p class="verify-line">Data cross-referenced with the official Israel Basketball Association box score.</p>
     </div>
-    <button class="btn-download" onclick="(function(){var b=new Blob(['\ufeff'+document.documentElement.outerHTML],{type:'text/html;charset=utf-8'});var a=document.createElement('a');a.href=URL.createObjectURL(b);a.download='Report_Nitai_Rosenberg_2026-09-23.html';a.click();})()">⬇ Download Report</button>
-    <button class="btn-download" onclick="window.print()">🖨 Save as PDF</button>
-    <img src="https://ibasketball.co.il/wp-content/uploads/2007/10/עיצוב-ללא-שם-50-1-819x1024.png" alt="Nitai Rosenberg" style="width:78px; border-radius:8px; object-fit:cover;" onerror="this.style.display='none'">
+    
+    <div style="display: flex; flex-direction: column; gap: 8px; align-items: flex-end;">
+      <button class="btn-download" onclick="(function(){var b=new Blob(['\ufeff'+document.documentElement.outerHTML],{type:'text/html;charset=utf-8'});var a=document.createElement('a');a.href=URL.createObjectURL(b);a.download='Report_Nitai_Rosenberg_2026-09-23.html';a.click();})()">⬇ Download Report</button>
+      <button class="btn-download" onclick="window.print()">🖨 Save as PDF</button>
+      <span class="print-note print-instruction" style="font-size: 10px; color: #94a3b8;">* Select "Background graphics" in print dialog</span>
+    </div>
+
+    <img src="https://ibasketball.co.il/wp-content/uploads/2007/10/עיצוב-ללא-שם-50-1-819x1024.png" alt="Nitai Rosenberg" onerror="this.style.display='none'" style="width: 78px; height: auto; border-radius: 6px; border: 1px solid #38bdf8;">
   </div>
 
-  <h2>Executive Summary</h2>
+  <h2>Key Takeaway</h2>
   <div class="summary-box">
-    <p><strong>PIR 0 · PIR Percentile 12 · 35th Best Game:</strong> The complete lack of scoring production and poor offensive efficiency negated the high-volume offensive rebounding performance, resulting in a net negative impact during minutes played.</p>
+    <p>PIR 0 · PIR Percentile 12 · 35th Best Game this Season: Offensively passive baseline performance offset by high-volume offensive rebounding work rate. Primary objective is converting second-chance possessions into high-percentage paint finishes rather than resetting perimeter touches.</p>
   </div>
 
   <h2>Game Snapshot</h2>
@@ -37,11 +52,11 @@
         <th>PTS</th>
         <th>REB</th>
         <th>AST</th>
-        <th>2PT</th>
-        <th>3PT</th>
+        <th>2P</th>
+        <th>3P</th>
         <th>FT</th>
         <th>TO</th>
-        <th>FOULS</th>
+        <th>PF</th>
         <th>PIR</th>
         <th>±</th>
       </tr>
@@ -50,46 +65,48 @@
       <tr>
         <td>20 (-0.1)</td>
         <td>0 (-10.2)</td>
-        <td class="highlight-cell">7 (+3.0) (OFF 4, DEF 3)</td>
+        <td class="highlight-cell">7 (Def 3, Off 4)</td>
         <td>1 (-0.6)</td>
         <td>0% (0/2)</td>
         <td>0% (0/3)</td>
         <td>— (0/0)</td>
         <td>3</td>
-        <td class="highlight-cell">0</td>
+        <td>0</td>
         <td>0 (-10.2)</td>
         <td>-2</td>
       </tr>
     </tbody>
   </table>
-  <p class="print-note">Highlighted cells = Top 25% league percentile. Please check 'Background graphics' in your browser's print dialog.</p>
-  <p>League Percentiles: PIR 12 · PTS 5 · REB 82 · AST 36 · STL 25 · BLK 40 · MIN 41 · TO 17 · FOULS 94 | vs Career Average: Below</p>
+  <p class="print-note">Highlighted cells = Top 25% league percentile in this metric.</p>
+  <p>League Percentiles: PIR 12 · PTS 5 · REB 82 · AST 36 · STL 25 · BLK 40 · MIN 41 · TO 17 · PF 94 | Versus Career Average: Decreased</p>
 
-  <h2>To Maintain</h2>
+  <h2>Keep Doing</h2>
   <ul>
-    <li><strong>Offensive Rebounding:</strong> Secured 4 offensive rebounds (Q1 06:14, Q2 04:16, Q2 03:43, Q2 03:03), placing in the 82nd percentile for total rebounds and generating second-chance opportunities.</li>
-    <li><strong>Foul Discipline:</strong> Committed zero fouls in 20 minutes of play, ranking in the 94th percentile and remaining available for all defensive rotations.</li>
+    <li><strong>Elite Offensive Glass Crashing:</strong> Generated 4 offensive rebounds in 20 minutes (Q1 06:14, Q2 04:16, Q2 03:43, Q2 03:03), placing in the 82nd percentile league-wide. Positioned effectively from the wing to track long rebounds and create immediate extra possessions.</li>
+    <li><strong>Clean Defensive Discipline:</strong> Recorded 0 personal fouls across 3 distinct stints totaling 20 minutes (94th percentile). Maintained verticality and position without yielding free throws or entering foul trouble.</li>
   </ul>
 
-  <h2>To Improve</h2>
+  <h2>Needs Improvement</h2>
   <ul>
-    <li><strong>Finishing and Volume:</strong> Scored 0 points on 0/5 shooting overall, falling 10.2 points below career average, which directly hurt offensive spacing (Q1 08:43, Q1 05:41).</li>
-    <li><strong>Passing Execution:</strong> Committed 3 turnovers against only 1 assist (Q2 08:20, Q2 02:59, Q4 02:16), terminating multiple offensive possessions with poor passes.</li>
-    <li><strong>Stint Consistency:</strong> Failed to score in any of the 3 stints and averaged 1 turnover per stint, preventing the team from capitalizing on the +2 to +9 leads present when entering the game.</li>
+    <li><strong>Perimeter Shot Selection vs. Drive Volume:</strong> Attempted 3 perimeter shots (0% 3P) and 2 two-point shots (0% 2P) with zero drawn fouls, converting 0 points from 5 field goal attempts (Q1 08:43, Q1 05:41, Q2 03:45, Q3 07:58, Q4 02:46). Settling for contested jumpers as a primary wing option yielded 0 points per possession and limited line visits.</li>
+    <li><strong>Passing Security on Stint Transitions:</strong> Committed 3 turnovers directly off poor passes (Q2 08:20, Q2 02:59, Q4 02:16), costing the team an estimated 6 transition points. Two turnovers occurred within 34 seconds of entering or exiting a stint, indicating a drop in decision-making clarity under pressure.</li>
+    <li><strong>Efficiency and On-Court Impact:</strong> Finished with a 0 PIR (-10.2 below career average of 10.2) and a -2 plus/minus in an 89-86 loss. Inability to convert 4 offensive rebounds into direct second-chance points stalled momentum during Q2 and Q4 execution windows.</li>
   </ul>
 
-  <h2>Practice Focus</h2>
+  <h2>This Week's Practice</h2>
   <ol>
-    <li><strong>#1 - Highest Leverage:</strong> 0 points on 0/2 shooting inside the arc in 20 minutes limited your primary SF role. Action: Practice 1-on-1 downhill drives starting from the wing against a live defender. Target: At least 4 paint touch attempts per game.</li>
-    <li>3 passing turnovers negated your offensive rebounding efforts. Action: Run transition and half-court passing drills focusing on read-and-react decisions under defensive pressure. Target: Maintain an assist-to-turnover ratio above 1.5 in the next 3 games.</li>
-    <li>0/3 from beyond the arc decreased overall efficiency. Action: Perform 100 game-speed catch-and-shoot repetitions from the corners and wings. Target: Convert at least 33% on 3+ attempts in future matchups.</li>
+    <li><strong>#1 - The Highest Leverage Lever: Paint Touch Attacking &amp; Contact Finish:</strong> Drill 50 rim-attack reps daily from wing catches, prioritizing two-foot power stops and drawing contact instead of settling for pull-up jumpers. Target for next games: Minimum 4 paint field goal attempts or drawn fouls per game.</li>
+    <li><strong>Second-Chance Putback Decisions:</strong> Practice immediate strong-side putbacks off offensive rebounds within 1.5 seconds of securing the ball, bypassing perimeter kick-outs. Target for next games: Convert at least 50% of offensive rebounds into direct field goal attempts or drawn fouls.</li>
+    <li><strong>High-Pressure Passing Progression:</strong> Execute 100 live-defense passing reps under trap conditions, focusing on low-entry bounce passes and skipping high-risk perimeter feeds. Target for next games: Zero unforced passing turnovers.</li>
   </ol>
 
   <h2>Disclaimer</h2>
   <div class="disclaimer">
-    <p>This report was automatically generated by artificial intelligence, based solely on raw play-by-play data, without verification or control by a human professional. The data and conclusions may contain interpretation or extraction errors, do not constitute a professional opinion, and should be treated accordingly and independently verified before making decisions.</p>
+    This report was generated automatically by artificial intelligence based strictly on raw play-by-play data, without verification or review by a human professional. The data and conclusions may contain errors of interpretation or extraction, do not constitute professional advice, and should be treated accordingly and independently verified before making decisions.
   </div>
+</div>
 
-  <div class='cq-foot' style='margin-top:18px;padding-top:10px;border-top:1px solid rgba(255,255,255,.14);font:12px system-ui;color:#94a3b8;text-align:center'>ClipIQ · clipiq.co.il<div class='socialbar' style='margin-top:10px;direction:ltr;text-align:center'><a href='https://www.instagram.com/clipiq.il' target='_blank' rel='noopener' title='Instagram' style='display:inline-block;margin:0 6px;text-decoration:none'><img src='https://clipiq.co.il/brand/social_instagram_w.svg' alt='Instagram' width='22' height='22' style='display:inline-block;vertical-align:middle'></a><a href='https://www.tiktok.com/@clipiq.il' target='_blank' rel='noopener' title='TikTok' style='display:inline-block;margin:0 6px;text-decoration:none'><img src='https://clipiq.co.il/brand/social_tiktok_w.svg' alt='TikTok' width='22' height='22' style='display:inline-block;vertical-align:middle'></a></div></div>
+<div class='cq-foot' style='margin-top:18px;padding-top:10px;border-top:1px solid rgba(255,255,255,.14);font:12px system-ui;color:#94a3b8;text-align:center'>ClipIQ · clipiq.co.il<div class='socialbar' style='margin-top:10px;direction:ltr;text-align:center'><a href='https://www.instagram.com/clipiq.il' target='_blank' rel='noopener' title='Instagram' style='display:inline-block;margin:0 6px;text-decoration:none'><img src='https://clipiq.co.il/brand/social_instagram_w.svg' alt='Instagram' width='22' height='22' style='display:inline-block;vertical-align:middle'></a><a href='https://www.tiktok.com/@clipiq.il' target='_blank' rel='noopener' title='TikTok' style='display:inline-block;margin:0 6px;text-decoration:none'><img src='https://clipiq.co.il/brand/social_tiktok_w.svg' alt='TikTok' width='22' height='22' style='display:inline-block;vertical-align:middle'></a></div></div>
+
 </body>
 </html>
