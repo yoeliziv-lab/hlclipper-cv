@@ -5,115 +5,265 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <link rel="stylesheet" href="https://clipiq.co.il/brand/report.css">
 <style>
-  @page { size: A4; margin: 1.6cm; }
-  @media print { .btn-download { display: none; } }
+@page { size: A4; margin: 1.6cm; }
+@media print { .btn-download { display: none !important; } }
 </style>
-<title>ניתאי רוזנברג · ניתוח נתונים</title>
+<title>ניב למפרט - ניתוח מגמות ומסלול התפתחות</title>
 </head>
 <body>
-<style>.cq-nav{display:flex;gap:8px;flex-wrap:wrap;justify-content:center;align-items:center;padding:11px 96px;margin:0 0 14px;background:#0f172a;border-bottom:1px solid #1e293b;font:600 13px system-ui;box-sizing:border-box;max-width:100%;overflow:hidden}.cq-nav a{white-space:nowrap}@media(max-width:760px){.cq-nav{padding:46px 10px 10px;gap:6px;font-size:12px}.cq-nav a{padding:4px 10px}}@media print{.cq-nav{display:none}}</style><div class='cq-nav' dir='ltr'><a href='index.html' style='display:inline-block;text-decoration:none;padding:5px 13px;border-radius:999px;border:1px solid #334155;color:#cbd5e1;background:transparent'>תיק שחקן</a><a href='scout-he.html' style='display:inline-block;text-decoration:none;padding:5px 13px;border-radius:999px;border:1px solid #334155;color:#cbd5e1;background:transparent'>דף סקאוט</a><a href='game-he.html' style='display:inline-block;text-decoration:none;padding:5px 13px;border-radius:999px;border:1px solid #334155;color:#cbd5e1;background:transparent'>דוח משחק</a><a href='trend-he.html' style='display:inline-block;text-decoration:none;padding:5px 13px;border-radius:999px;border:1px solid #38bdf8;color:#0b1220;background:#38bdf8'>דוח מגמה</a><a href='trend-he.pdf' download='ClipIQ_Nitai_Rosenberg_TrendReport_HE.pdf' style='display:inline-block;text-decoration:none;padding:5px 13px;border-radius:999px;border:1px solid #2f6d4a;color:#9ad2a9'>PDF ⬇</a></div>
 <a class='cq-langsw' href='trend-en.html' style='position:fixed;top:10px;left:10px;z-index:99;background:#1d2630;color:#cfe0d6;border:1px solid #35475a;border-radius:999px;padding:6px 14px;font:700 13px system-ui;text-decoration:none;box-shadow:0 2px 10px rgba(0,0,0,.4)'>English</a><style>@media print{.cq-langsw{display:none}}</style>
+<style>.cq-nav{display:flex;gap:8px;flex-wrap:wrap;justify-content:center;align-items:center;padding:11px 96px;margin:0 0 14px;background:#0f172a;border-bottom:1px solid #1e293b;font:600 13px system-ui;box-sizing:border-box;max-width:100%;overflow:hidden}.cq-nav a{white-space:nowrap}@media(max-width:760px){.cq-nav{padding:46px 10px 10px;gap:6px;font-size:12px}.cq-nav a{padding:4px 10px}}@media print{.cq-nav{display:none}}</style><div class='cq-nav' dir='ltr'><a href='index.html' style='display:inline-block;text-decoration:none;padding:5px 13px;border-radius:999px;border:1px solid #334155;color:#cbd5e1;background:transparent'>תיק שחקן</a><a href='scout-he.html' style='display:inline-block;text-decoration:none;padding:5px 13px;border-radius:999px;border:1px solid #334155;color:#cbd5e1;background:transparent'>דף סקאוט</a><a href='game-he.html' style='display:inline-block;text-decoration:none;padding:5px 13px;border-radius:999px;border:1px solid #334155;color:#cbd5e1;background:transparent'>דוח משחק</a><a href='trend-he.html' style='display:inline-block;text-decoration:none;padding:5px 13px;border-radius:999px;border:1px solid #38bdf8;color:#0b1220;background:#38bdf8'>דוח מגמה</a><a href='trend-he.pdf' download='ClipIQ_Nitai_Rosenberg_TrendReport_HE.pdf' style='display:inline-block;text-decoration:none;padding:5px 13px;border-radius:999px;border:1px solid #2f6d4a;color:#9ad2a9'>PDF ⬇</a></div>
 <div class="container">
-<div class='cq-brand' style='display:flex;align-items:center;justify-content:space-between;gap:12px;margin:0 0 14px'><img src='https://clipiq.co.il/brand/logo_lockup_h_light.png' alt='ClipIQ' style='height:52px;width:auto'><span style='font:600 12px system-ui;color:#94a3b8'>ניתאי רוזנברג · 10 המשחקים האחרונים · 2026-04-17 – 2026-09-15</span></div>
 
-<div class="header-actions" style="display:flex; justify-content:space-between; align-items:flex-start; gap:20px;">
+<div class='cq-brand' style='display:flex;align-items:center;justify-content:space-between;gap:12px;margin:0 0 14px'><img src='https://clipiq.co.il/brand/logo_lockup_h_light.png' alt='ClipIQ' style='height:52px;width:auto'><span style='font:600 12px system-ui;color:#94a3b8'>ניב למפרט · 10 המשחקים האחרונים · 2026-04-17 – 2026-09-15</span></div>
+
+<div class="header-actions">
   <div>
-    <h1>ניתאי רוזנברג</h1>
+    <h1>ניב למפרט</h1>
     <div class="date-range">10 המשחקים האחרונים · 2026-04-17 עד 2026-09-15</div>
-    <div class="player-id-bar">משחקים בניתוח: 10 | עמדה: סמול פורוורד (SF) | ליגה לאומית</div>
+    <div class="player-id-bar">משחקים בניתוח: 10 | עמדה: רכז (PG) | ממוצע דקות: 21.1</div>
     <p class="verify-line">הנתונים הוצלבו מול הבוקס-סקור הרשמי של איגוד הכדורסל (9 מתוך 10 משחקים)</p>
   </div>
   <div>
-    <button class="btn-download" onclick="(function(){var b=new Blob(['\ufeff'+document.documentElement.outerHTML],{type:'text/html;charset=utf-8'});var a=document.createElement('a');a.href=URL.createObjectURL(b);a.download='ניתוח_ניתאי_רוזנברג_2026-09-27.html';a.click();})()">⬇ הורד את הדוח</button>
+    <button class="btn-download" onclick="(function(){var b=new Blob(['\ufeff'+document.documentElement.outerHTML],{type:'text/html;charset=utf-8'});var a=document.createElement('a');a.href=URL.createObjectURL(b);a.download='ניתוח_ניב_למפרט_2026-09-27.html';a.click();})()">⬇ הורד את הדוח</button>
     <button class="btn-download" onclick="window.print()">🖨 שמור כ-PDF</button>
   </div>
-  <div>
-    <img src="https://ibasketball.co.il/wp-content/uploads/2007/10/עיצוב-ללא-שם-50-1-819x1024.png" alt="ניתאי רוזנברג" style="width:70px; height:70px; object-fit:cover; border-radius:50%;" onerror="this.style.display='none'">
-  </div>
+  <img src="https://ibasketball.co.il/wp-content/uploads/2004/01/עיצוב-ללא-שם-46-819x1024.png" alt="ניב למפרט" onerror="this.style.display='none'">
 </div>
 
 <h2>תקציר ניתוח</h2>
 <div class="summary-box">
-  <p><strong>ברבע המשחקים החלשים שלו הוא תרם בממוצע 1.5 בלבד - כמעט ללא תרומה נמדדת - לעומת 12.0 בממוצע בחלון ו-28.5 בערבים הטובים. כלומר הממוצע נשען על חלק מהמשחקים, ולא על כולם.</strong></p>
+<p><strong>ברבע המשחקים החלשים שלו הוא תרם בממוצע 1.5 בלבד - כמעט ללא תרומה נמדדת - לעומת 12.0 בממוצע בחלון ו-28.5 בערבים הטובים. כלומר הממוצע נשען על חלק מהמשחקים, ולא על כולם.</strong></p>
 </div>
 
 <h2>תמונת החלון (10 המשחקים האחרונים)</h2>
-
 <table>
-  <thead>
-    <tr>
-      <th>מדד</th>
-      <th>ממוצע</th>
-      <th>3 מש' אחרונים</th>
-      <th>כיוון</th>
-      <th>אחוזון-ליגה</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr><td>דקות</td><td>21.1</td><td>23.7</td><td>▲</td><td>52</td></tr>
-    <tr><td>נק'</td><td>13.1</td><td>18.7</td><td>▲</td><td>81</td></tr>
-    <tr><td>ריב'</td><td>4.5</td><td>5.7</td><td>▲</td><td>69</td></tr>
-    <tr><td>אס'</td><td>1.4</td><td>1.7</td><td>▲</td><td>44</td></tr>
-    <tr><td>אחוז 2</td><td>58% (23/40)</td><td>86% (12/14)</td><td>▲</td><td>59</td></tr>
-    <tr><td>אחוז 3</td><td>51% (25/49)</td><td>62% (8/13)</td><td>▲</td><td>99</td></tr>
-    <tr><td>איבודים</td><td>1.7</td><td>1.7</td><td>■</td><td>33</td></tr>
-    <tr><td>עבירות</td><td>3.4</td><td>2.7</td><td>▼</td><td>2</td></tr>
-    <tr><td>PIR</td><td>12.0</td><td>24.3</td><td>▲</td><td>67</td></tr>
-    <tr><td>±</td><td>4.6</td><td>6.0</td><td>▲</td><td>88</td></tr>
-  </tbody>
+<thead>
+<tr>
+<th>מדד</th>
+<th>ממוצע</th>
+<th>3 מש' אחרונים</th>
+<th>כיוון</th>
+<th>אחוזון-ליגה</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>דקות</td>
+<td>21.1</td>
+<td>23.7</td>
+<td>▲</td>
+<td>39</td>
+</tr>
+<tr>
+<td>נק'</td>
+<td>13.1</td>
+<td>18.7</td>
+<td>▲</td>
+<td>51</td>
+</tr>
+<tr>
+<td>ריב'</td>
+<td>4.5</td>
+<td>5.7</td>
+<td>▲</td>
+<td>54</td>
+</tr>
+<tr>
+<td>אס'</td>
+<td>1.4</td>
+<td>1.7</td>
+<td>▲</td>
+<td>76</td>
+</tr>
+<tr>
+<td>אחוז 2</td>
+<td>58% (23/40)</td>
+<td>86% (12/14)</td>
+<td>▲</td>
+<td>—</td>
+</tr>
+<tr>
+<td>אחוז 3</td>
+<td>51% (25/49)</td>
+<td>62% (8/13)</td>
+<td>▲</td>
+<td>—</td>
+</tr>
+<tr>
+<td>איבודים</td>
+<td>1.7</td>
+<td>1.7</td>
+<td>■</td>
+<td>22</td>
+</tr>
+<tr>
+<td>עבירות</td>
+<td>3.4</td>
+<td>2.7</td>
+<td>▼</td>
+<td>13</td>
+</tr>
+<tr>
+<td>PIR</td>
+<td>12.0</td>
+<td>24.3</td>
+<td>▲</td>
+<td>53</td>
+</tr>
+<tr>
+<td>±</td>
+<td>4.6</td>
+<td>6.0</td>
+<td>▲</td>
+<td>49</td>
+</tr>
+</tbody>
 </table>
 <p class="print-note">חלון של 10 משחקים נבחר כי מתחת לזה הממוצע רועש מדי (שגיאת-תקן 3.2 נקודות ב-5 משחקים מול 2.2 ב-10), ומעליו הוא מערבב תקופות ותפקידים שונים. יש לסמן Background graphics בדיאלוג ההדפסה.</p>
 
 <h2>לשמר</h2>
 <ul>
-  <li><strong>יעילות קליעה גבוהה בשלשה ובטווח הקרוב:</strong> השחקן מציג 51% (25/49) משלוש ו-58% (23/40) משתיים בחלון, עם שיפור ל-62% (8/13) ו-86% (12/14) בשלושת המשחקים האחרונים.</li>
-  <li><strong>יציבות בדקות משחק ועקביות תפוקה בערבים המוצלחים:</strong> השחקן שומר על נוכחות יציבה של מעל 21 דקות בממוצע (21.1 דק'), ומייצר תקרה של 28.5 PIR בערבים החזקים שלו.</li>
+<li><strong>יעילות גבוהה מחוץ קשת:</strong> קלעת 51% (25/49) לשלוש בחלון עם מגמת שיפור ל-62% (8/13) ב-3 המשחקים האחרונים, מה שדורש להמשיך לייצר נפח זריקות יציב מעבר לקשת.</li>
+<li><strong>שליטה טובה בכדור וניהול מסירות:</strong> אתה שומר על יציבות של 1.7 איבודים למשחק בלבד לאורך החלון כולו, לצד אחוזון ליגה מרשים של 76 באסיסטים ביחס לעמדה.</li>
 </ul>
 
 <h2>לשפר</h2>
 <ul>
-  <li><strong>צמצום עבירות מאוחרות ברבע 4:</strong> 38% מכלל העבירות בחלון (13 מתוך 34) מתבצעות ברבע האחרון, מה שפוגע בזמינותו בדקות ההכרעה.</li>
-  <li><strong>הגדלת נפח הזריקות מחצי מרחק ומהקו:</strong> השחקן זרק רק 14 זריקות עונשין ב-10 משחקים (71% דיוק, 10/14), נתון שמצביע על חוסר תוקפנות ביצירת מגע לסחיטת עבירות בחדירות.</li>
-  <li><strong>ניהול איבודים תחת לחץ:</strong> ממוצע של 1.7 איבודים למשחק (ובסך הכל 17 איבודים בחלון) הפרוסים באופן שווה לאורך כל רבעי המשחק, דורש שיפור בקבלת ההחלטות במסירה.</li>
+<li><strong>צמצום עבירות מאוחרות ברבעים מכריעים:</strong> 38% מהעבירות שלך (13 מתוך 34) מרוכזות ברבע ה-4, מה שפוגע בזמינותך לדקות ההכרעה; הפעולה: בהגנה אישית ברבע המכריע שמור על מרחק גוף בלי ליצור מגע ידיים מיותר. היעד: לרדת למקסימום 2 עבירות בסך הכל במחצית השנייה.</li>
+<li><strong>התאמת נפח המסירות לדרישות תפקיד הרכז:</strong> למרות אחוזון ליגה גבוה באסיסטים, הממוצע העונתי עומד על 1.4 אסיסטים בלבד למשחק ב-21.1 דקות. הפעולה: הגבר את חיפוש שחקני הפנים בחיתוכים מתוך פיק-אנד-רول. היעד: להעלות את ממוצע האסיסטים ל-2.5 למשחק בחלון הבא.</li>
+<li><strong>מניעת היעלמות בערבים החלשים:</strong> הרצפה העונתית עומדת על 1.5 PIR בלבד בערבים הגרועים, מה שמצביע על תנודות קיצוניות. הפעולה: במקום לזרוק מרחוק כשהמשחק לא זורם, התחל את הסטינט הראשון בייצור נקודות קלות מחצי מרחק או מסירה בטוחה. היעד: מדד PIR מינימלי של 8.0 גם בערבים חלשים.</li>
 </ul>
 
-<h2>תוקנית 3 שבועות</h2>
+<h2>תוכנית 3 שבועות</h2>
 <ol>
-  <li><strong>שמירה על מרחק זרוע בהגנה האישית ברבע 4:</strong> בהתבסס על 13 עבירות ברבע האחרון, תרגל בהגנה על נושא הכדור בסטינטים האחרונים עמידה בלי יצירת מגע מיותר, במטרה לרדת למקסימום עבירה אחת ברבע 4.</li>
-  <li><strong>הגדלת יוזמה להתקפת טבעת וסחיטת עבירות:</strong> בהתבסס על 1.4 זריקות עונשין בלבד למשחק (10/14 בחלון), חדר באגרסיביות לצבע בלי לוותר על מסירת הוצאה החוצה, כדי להגיע לפחות ל-3 זריקות עונשין בממוצע למשחק.</li>
-  <li><strong>דיוק במסירות מתוך חדירה:</strong> בהתבסס על 1.7 איבודים למשחק, תרגל מסירות קצרות מתוך כיווץ ההגנה ביד חזקה בלבד, במטרה להוריד את כמות איבודי המסירה מתחת ל-1.0 למשחק.</li>
+<li><strong>שבוע 1 - ניהול עבירות בהגנה:</strong> תרגל הגנה רגלית ללא שליחת ידיים במצבי 1 על 1 בקו האחורי. היעד: לסיים את 3 המשחקים הקרובים עם פחות מ-3 עבירות בממוצע למשחק.</li>
+<li><strong>שבוע 2 - הרחבת מעורבות התקפית:</strong> הגדל את נפח המסירות והחדירות ליצירת מצבים לקלעים ולגבוהים. היעד: הגעה לפחות ל-3 אסיסטים למשחק בשני משחקים רצופים.</li>
+<li><strong>שבוע 3 - שמירה על יציבות אישית:</strong> הימנע מזריקות מוקדמות קשות ברבע הראשון והתמקד בבניית קצב דרך הגנה וריבאונד. היעד: הימנעות מרדת מתחת למדד PIR של 10.0 באף אחד מהמשחקים.</li>
 </ol>
 
 <h2>פירוט פר-משחק</h2>
-<div class="games-grid" style="display:grid; grid-template-columns: 1fr 1fr; gap: 15px;">
-  <div>
-    <table>
-      <thead>
-        <tr><th>תאריך</th><th>יריבה</th><th>דק'</th><th>נק'</th><th>ריב'</th><th>אס'</th><th>PIR</th></tr>
-      </thead>
-      <tbody>
-        <tr><td>2026-04-17</td><td>הפועל נווה שאנן חיפה</td><td>24</td><td><strong>20</strong></td><td>3</td><td>0</td><td>16</td></tr>
-        <tr><td>2026-04-24</td><td>מכבי מעלה אדומים</td><td>23</td><td>11</td><td><strong>7</strong></td><td>2</td><td>4</td></tr>
-        <tr><td>2026-04-28</td><td>א.ס. רמת השרון ירק השדה</td><td>18</td><td>2</td><td>3</td><td><strong>4</strong></td><td>1</td></tr>
-        <tr><td>2026-05-08</td><td>מכבי מנדל פ"ת</td><td>12</td><td>9</td><td>0</td><td>0</td><td>4</td></tr>
-        <tr><td>2026-05-12</td><td>א.ס. אשקלון/קרית גת</td><td>21</td><td>7</td><td>4</td><td>3</td><td>2</td></tr>
-      </tbody>
-    </table>
-  </div>
-  <div>
-    <table>
-      <thead>
-        <tr><th>תאריך</th><th>יריבה</th><th>דק'</th><th>נק'</th><th>ריב'</th><th>אס'</th><th>PIR</th></tr>
-      </thead>
-      <tbody>
-        <tr><td>2026-05-15</td><td>אליצור יבנה</td><td>24</td><td>16</td><td>5</td><td>0</td><td>14</td></tr>
-        <tr><td>2026-05-19</td><td>מכבי גיא נתן חיפה</td><td>18</td><td>10</td><td>6</td><td>0</td><td>6</td></tr>
-        <tr><td>2026-05-24</td><td>מכבי מעלה אדומים</td><td>20</td><td>13</td><td>5</td><td>2</td><td>16</td></tr>
-        <tr><td>2026-05-27</td><td>מ.ס צפת</td><td>23</td><td><strong>20</strong></td><td>5</td><td>3</td><td><strong>27</strong></td></tr>
-        <tr><td>2026-09-15</td><td>אליצור נתניה</td><td><strong>28</strong></td><td><strong>23</strong></td><td><strong>7</strong></td><td>0</td><td><strong>30</strong></td></tr>
-      </tbody>
-    </table>
-  </div>
+<div class="games-grid">
+<table>
+<thead>
+<tr>
+<th>תאריך</th>
+<th>יריבה</th>
+<th>דק'</th>
+<th>נק'</th>
+<th>ריב'</th>
+<th>אס'</th>
+<th>PIR</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2026-04-17</td>
+<td>הפועל נווה שאנן חיפה</td>
+<td><strong>24</strong></td>
+<td><strong>20</strong></td>
+<td>3</td>
+<td>0</td>
+<td><strong>16</strong></td>
+</tr>
+<tr>
+<td>2026-04-24</td>
+<td>מכבי מעלה אדומים</td>
+<td><strong>23</strong></td>
+<td>11</td>
+<td><strong>7</strong></td>
+<td>2</td>
+<td>4</td>
+</tr>
+<tr>
+<td>2026-04-28</td>
+<td>א.ס. רמת השרון ירק השדה</td>
+<td>18</td>
+<td>2</td>
+<td>3</td>
+<td><strong>4</strong></td>
+<td>1</td>
+</tr>
+<tr>
+<td>2026-05-08</td>
+<td>מכבי מנדל פ"ת</td>
+<td>12</td>
+<td>9</td>
+<td>0</td>
+<td>0</td>
+<td>4</td>
+</tr>
+<tr>
+<td>2026-05-12</td>
+<td>א.ס. אשקלון/קרית גת</td>
+<td>21</td>
+<td>7</td>
+<td>4</td>
+<td>3</td>
+<td>2</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>תאריך</th>
+<th>יריבה</th>
+<th>דק'</th>
+<th>נק'</th>
+<th>ריב'</th>
+<th>אס'</th>
+<th>PIR</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2026-05-15</td>
+<td>אליצור יבנה</td>
+<td><strong>24</strong></td>
+<td><strong>16</strong></td>
+<td>5</td>
+<td>0</td>
+<td><strong>14</strong></td>
+</tr>
+<tr>
+<td>2026-05-19</td>
+<td>מכבי גיא נתן חיפה</td>
+<td>18</td>
+<td>10</td>
+<td>6</td>
+<td>0</td>
+<td>6</td>
+</tr>
+<tr>
+<td>2026-05-24</td>
+<td>מכבי מעלה אדומים</td>
+<td>20</td>
+<td><strong>13</strong></td>
+<td>5</td>
+<td>2</td>
+<td><strong>16</strong></td>
+</tr>
+<tr>
+<td>2026-05-27</td>
+<td>מ.ס צפת</td>
+<td><strong>23</strong></td>
+<td><strong>20</strong></td>
+<td>5</td>
+<td>3</td>
+<td><strong>27</strong></td>
+</tr>
+<tr>
+<td>2026-09-15</td>
+<td>אליצור נתניה</td>
+<td><strong>28</strong></td>
+<td><strong>23</strong></td>
+<td><strong>7</strong></td>
+<td>0</td>
+<td><strong>30</strong></td>
+</tr>
+</tbody>
+</table>
 </div>
 <p class="print-note">תאים מודגשים = אחד מ-5 המשחקים הטובים של השחקן העונה במדד הזה (בעבירות ובאיבודים - הנמוכים).</p>
 
@@ -123,6 +273,7 @@
 </div>
 
 <div class='cq-foot' style='margin-top:18px;padding-top:10px;border-top:1px solid rgba(255,255,255,.14);font:12px system-ui;color:#94a3b8;text-align:center'>ClipIQ · clipiq.co.il<div class='socialbar' style='margin-top:10px;direction:ltr;text-align:center'><a href='https://www.instagram.com/clipiq.il' target='_blank' rel='noopener' title='Instagram' style='display:inline-block;margin:0 6px;text-decoration:none'><img src='https://clipiq.co.il/brand/social_instagram_w.svg' alt='Instagram' width='22' height='22' style='display:inline-block;vertical-align:middle'></a><a href='https://www.tiktok.com/@clipiq.il' target='_blank' rel='noopener' title='TikTok' style='display:inline-block;margin:0 6px;text-decoration:none'><img src='https://clipiq.co.il/brand/social_tiktok_w.svg' alt='TikTok' width='22' height='22' style='display:inline-block;vertical-align:middle'></a><a href='https://www.youtube.com/@ClipIQil' target='_blank' rel='noopener' title='YouTube' style='display:inline-block;margin:0 6px;text-decoration:none'><img src='https://clipiq.co.il/brand/social_youtube_w.svg' alt='YouTube' width='22' height='22' style='display:inline-block;vertical-align:middle'></a></div></div>
+
 </div>
 </body>
 </html>
