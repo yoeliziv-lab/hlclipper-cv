@@ -46,10 +46,15 @@ h2{font-size:1.15rem}
 .date-range{font-size:.85rem}
 table{font-size:.82rem}
 th,td{padding:5px 4px}
-.games-grid{flex-direction:column;gap:10px}
-.games-grid table{font-size:.9rem}
-.games-grid th,.games-grid td{padding:6px 5px}
-.games-grid td:nth-child(2){max-width:none}
+/* ⚠️ דווח 28/09 (צילומי-מסך): בטלפון שני חצאי-הטבלה נערמו, אבל כל
+   אחד ברוחב-התוכן שלו - בעברית הראשון צר מהשני, ובאנגלית הכותרות
+   ('MI N') והתאריכים נשברו. עכשיו: שניהם ברוחב מלא, מספרים ותאריכים
+   בלי שבירה, ורק שם-היריבה גולש. */
+.games-grid{flex-direction:column;gap:10px;align-items:stretch !important}
+.games-grid>*{width:100% !important;max-width:none !important}
+.games-grid table{font-size:.85rem;width:100% !important}
+.games-grid th,.games-grid td{padding:6px 4px;white-space:nowrap !important;word-break:normal !important}
+.games-grid th:nth-child(2),.games-grid td:nth-child(2){max-width:none;white-space:normal !important;width:99%}
 .header-actions{flex-direction:column;align-items:stretch;gap:10px}
 .header-actions img{order:0 !important;align-self:flex-start;width:110px !important}
 .disclaimer,.verify-line,.print-note{font-size:.9rem}
