@@ -1,3 +1,8 @@
 # ClipIQ - player pages are shared by link, not indexed.
 User-agent: *
+Allow: /$
+Allow: /index.html
+Allow: /en/$
+Allow: /en/index.html
+Allow: /brand/
 Disallow: /
