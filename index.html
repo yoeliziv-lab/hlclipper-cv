@@ -74,7 +74,7 @@ h1 em{font-style:normal;color:var(--ink)}
 /* ── sections ────────────────────────── */
 section{padding:clamp(72px,11vw,140px) 0 clamp(48px,7vw,96px)}
 .h2{font:700 clamp(52px,10vw,104px)/.88 var(--display);color:var(--paper)}
-.lede{margin-top:16px;max-width:52ch;color:var(--mute);font-size:19px}
+.lede{margin-top:16px;max-width:68ch;color:var(--mute);font-size:19px}
 .band{border-block:1px solid var(--line);padding:16px 0;overflow:hidden}
 .band p{font:600 16px/1.6 var(--body);color:var(--mute);display:flex;flex-wrap:wrap;gap:6px 22px}
 .band b{color:var(--ink);font-weight:700;font-family:var(--num)}
@@ -86,7 +86,7 @@ section{padding:clamp(72px,11vw,140px) 0 clamp(48px,7vw,96px)}
 .itxt{display:grid;grid-template-columns:1fr auto;gap:6px 16px;align-items:baseline}
 .itxt h3{font:700 44px/.9 var(--display);color:var(--paper)}
 .itxt .goal{grid-column:2;grid-row:1;font:700 14px/1 var(--body);color:var(--ink)}
-.itxt p{grid-column:1/-1;color:var(--mute);max-width:46ch}
+.itxt p{grid-column:1/-1;color:var(--mute)}
 .m{position:relative;margin:0;background:var(--ground);overflow:hidden}
 .m canvas{position:absolute;inset:0;width:100%;height:100%;transition:opacity .6s var(--ease)}
 .m canvas{pointer-events:none}
@@ -101,29 +101,19 @@ section{padding:clamp(72px,11vw,140px) 0 clamp(48px,7vw,96px)}
 .pair .itxt h3{font-size:36px}
 .pair .itxt{grid-template-columns:1fr}
 .pair .itxt .goal{grid-column:1;grid-row:auto;justify-self:start}
-.m-chart{background:none;overflow:visible;padding-top:4px}
-.chart{list-style:none;margin:0;padding:0 0 0;display:flex;align-items:flex-end;gap:2px;height:150px;border-bottom:1px solid var(--line-2);direction:ltr}
-.chart li{position:relative;flex:1;display:flex;flex-direction:column;justify-content:flex-end;align-items:center;min-width:0}
-.chart .bar{font:700 8px/8px var(--num);color:rgba(169,182,211,.45);text-align:center}
-.chart .ok .bar{color:var(--ink)}
-.chart .v{display:none}
-.chart .tk{position:absolute;left:-1px;right:-1px;bottom:calc(var(--t) * 8px);height:2px;background:var(--paper);opacity:.55}
-.m-chart figcaption{margin-top:12px;font:500 14px/1.55 var(--body);color:var(--mute)}
-.statrow{display:flex;flex-wrap:wrap;gap:4px 22px;font:500 15px/1.3 var(--body);color:var(--mute)}
-.statrow span{display:flex;align-items:baseline;gap:7px}
-.statrow b{font:700 30px/1.1 var(--num);color:var(--paper);letter-spacing:-.03em}
+.tiles{display:grid;grid-template-columns:repeat(5,1fr);margin-top:20px;border-block:2px solid var(--ink)}
+.tiles .t{display:flex;flex-direction:column;align-items:center;gap:4px;padding:14px 2px 12px;text-align:center}
+.tiles .t+.t{border-inline-start:1px solid var(--line-2)}
+.tiles b{font:700 clamp(20px,6vw,30px)/1 var(--num);letter-spacing:-.04em;color:var(--paper)}
+.tiles .pir b{color:var(--ink)}
+.tiles span{font:600 13px/1.2 var(--body);color:var(--mute)}
+.tcap{margin-top:8px;font:500 14px/1.5 var(--body);color:var(--mute)}
+.basis{margin-top:40px;font:500 14px/1.5 var(--body);color:var(--mute)}
 .lnk{display:inline-block;margin-top:18px;color:var(--ink);font-weight:700;text-decoration:none;padding:8px 0}
 .lnk:hover{text-decoration:underline}
 .ar{display:inline-block;vertical-align:middle;margin-inline-start:6px}
 .m-page{border:1px solid var(--line-2)}
 .m-page img{height:auto}
-.log{margin:24px 0 8px}
-.log table{margin:0;direction:rtl}
-.log th{font:600 13px/1 var(--body);color:var(--mute);padding:8px 0;border-bottom:1px solid var(--line-2)}
-.log td{font:500 15px/1.4 var(--body);color:var(--mute);padding:9px 0;text-align:start;white-space:normal}
-.log td.num{font-family:var(--num);color:var(--paper);width:4.2em;direction:ltr;text-align:right}
-.log tr.on td{color:var(--ink)}
-.log figcaption{margin-top:10px;font:500 14px/1.5 var(--body);color:var(--mute)}
 
 /* pricing */
 .scope{margin-top:14px;max-width:62ch;color:var(--mute)}
@@ -136,11 +126,11 @@ section{padding:clamp(72px,11vw,140px) 0 clamp(48px,7vw,96px)}
 .pr b{font:700 clamp(56px,13vw,88px)/.95 var(--num);letter-spacing:-.04em;color:var(--paper);direction:ltr}
 .pr span{color:var(--mute);font-size:16px}
 .pn{color:var(--paper);font-weight:600;grid-column:1}
-.pl{color:var(--mute);font-size:16px;grid-column:1;max-width:44ch}
+.pl{color:var(--mute);font-size:16px;grid-column:1}
 .inc{margin:22px 0 26px;padding:0;list-style:none;display:grid;gap:8px;max-width:60ch}
 .inc li{position:relative;padding-inline-start:22px;color:var(--paper);font-size:17px;line-height:1.45}
 .inc li::before{content:"";position:absolute;inset-inline-start:0;top:.62em;width:10px;height:2px;background:var(--ink)}
-.fine{margin-top:14px;font-size:15px;color:var(--mute);max-width:70ch}
+.fine{margin-top:14px;font-size:15px;color:var(--mute)}
 .tbl-h{margin-top:56px;font:700 32px/1 var(--display)}
 table{width:100%;border-collapse:collapse;margin-top:12px}
 th,td{text-align:start;padding:13px 0;border-bottom:1px solid var(--line);vertical-align:top;font-weight:500}
@@ -165,7 +155,7 @@ details[open]>summary::after{transform:rotate(45deg)}
 .me{display:flex;align-items:baseline;gap:14px;flex-wrap:wrap}
 .me b{font:700 44px/1 var(--display);color:var(--paper)}
 .me span{font:500 16px/1.4 var(--body);color:var(--mute)}
-.about p{max-width:62ch;color:var(--paper);font-size:19px;line-height:1.65}
+.about p{color:var(--paper);font-size:19px;line-height:1.65}
 .about p+p{margin-top:14px}
 
 /* join */
@@ -188,9 +178,9 @@ input[type=radio],input[type=checkbox]{accent-color:var(--ink);width:20px;height
 /* faq + end + footer */
 .faq details{border-top:1px solid var(--line)}
 .faq summary{cursor:pointer;list-style:none;display:flex;justify-content:space-between;gap:16px;align-items:center;padding:18px 0;font-weight:700;font-size:20px}
-.faq details p{padding:0 0 20px;color:var(--mute);max-width:66ch}
+.faq details p{padding:0 0 20px;color:var(--mute)}
 .end{text-align:center;padding:clamp(80px,12vw,150px) 0}
-.end .h2{max-width:14ch;margin:0 auto}
+.end .h2{max-width:22ch;margin:0 auto}
 .end .btn{margin-top:28px}
 .end .clubs{display:block;margin-top:20px;color:var(--mute);text-decoration:none;padding:8px}
 .end .clubs:hover{color:var(--paper)}
@@ -219,7 +209,7 @@ footer ul{padding-inline-start:18px;margin:0;display:grid;gap:8px}
   .ctrl{padding-inline:0}
   .read{position:static;margin-top:4px}
   h1{font-size:clamp(110px,10.5vw,176px)}
-  .sub{font-size:22px}
+  .sub{font-size:22px;max-width:44ch}
   .halves{grid-template-columns:1fr 1fr;gap:clamp(40px,6vw,96px)}
   .halves>div:last-child{position:sticky;top:24px;align-self:start}
 
@@ -228,7 +218,6 @@ footer ul{padding-inline-start:18px;margin:0;display:grid;gap:8px}
   .sh{position:sticky;top:32px}
   .sb>:first-child{margin-top:0}
   .about .sb{display:grid;gap:22px}
-  .chart{height:190px}
 }
 @media (max-width:899px){.read{background:rgba(20,37,55,.84);padding:8px 10px;inset-inline:12px;border-radius:2px}.hero{display:flex;flex-direction:column}.hero-over{display:contents}.dock{order:1}.copy{order:2}}
 @media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
@@ -238,6 +227,18 @@ footer ul{padding-inline-start:18px;margin:0;display:grid;gap:8px}
 .m .mread{position:absolute;top:0;inset-inline:0;z-index:2;margin:0;padding:8px 10px;background:rgba(20,37,55,.84);font-size:13px;color:var(--paper)}
 @media (max-width:899px){.hero.land .field{height:auto;aspect-ratio:16/9}.hero.land .read{position:static;background:none;padding:10px var(--g) 0}}
 .btn svg{margin-inline-end:10px}
+@media (max-width:899px){
+  .copy{text-align:center}
+  h1,[dir=rtl] h1{text-align:center;font-size:min(calc((100vw - 2 * var(--g)) / 3.42),150px)}
+  .sub{max-width:none;margin-inline:auto}
+  .acts{justify-content:center;flex-direction:column}
+  .acts .btn{width:100%}
+  .band p{justify-content:center;text-align:center}
+  .prow{grid-template-columns:1fr}
+  .pr{grid-column:1;grid-row:auto;flex-direction:row;align-items:baseline;gap:10px}
+  .itxt{grid-template-columns:1fr}
+  .itxt .goal{grid-column:1;grid-row:auto;justify-self:start}
+}
 .need{font-size:15px;color:var(--mute)}
 .socials{margin-bottom:18px}
 </style></head><body>
@@ -253,7 +254,7 @@ footer ul{padding-inline-start:18px;margin:0;display:grid;gap:8px}
       <div class="acts"><a class='btn' href='#join'>אני רוצה להצטרף</a><a class="pilot" href="#price" style="text-decoration:none">מבצע מייסדים: 10 מקומות · 30% הנחה עד סוף העונה</a></div>
     </div>
     <div class="dock" id="dock">
-      <div class="ctrl"><span>וידאו</span><input id="res" type="range" min="0" max="100" value="45" aria-label="כמות הנתונים על הווידאו" aria-valuetext="וידאו"><span>נתונים</span></div>
+      <div class="ctrl"><span>וידאו</span><input id="res" type="range" min="0" max="100" value="25" aria-label="כמות הנתונים על הווידאו" aria-valuetext="וידאו"><span>נתונים</span></div>
       <p class='read' id='read'>רבע <b class='num'>4</b> · <b class='num'>03:00</b> · קלע 2 נקודות לייאפ + חטיפה + קלע 2 נקודות הטבעה<br><b class='num'>14</b> נק&#x27; · <b class='num'>2/4</b> לשלוש · PIR <b class='num'>15</b><span class='src'>ניתאי רוזנברג, 31.03 מול הפועל אסטרל אילת · מהלך המשחק הרשמי</span></p>
     </div>
   </div>
@@ -264,8 +265,9 @@ footer ul{padding-inline-start:18px;margin:0;display:grid;gap:8px}
   <p class="lede">אתה משחק - ואנחנו הופכים כל משחק לקליפים, לנתונים ולדוחות. הכל אצלך במקום אחד.</p>
   <div class="halves">
     <div><h3 class="half-h">וידאו</h3><article class='item'><div class='itxt'><h3>היילייטס מהמשחקים הטובים</h3><span class='goal'>לשתף</span><p>המהלכים הטובים שלך - ערוכים, מסודרים ומוכנים לצפייה ושיתוף.</p></div><figure class='m m-wide' data-glyph><video muted loop playsinline preload='none' aria-label='היילייטס מהמשחקים הטובים' poster='/brand/landing_hl.jpg'><source src='/brand/landing_hl.mp4' type='video/mp4'></video></figure></article><div class='pair'><article class='item'><div class='itxt'><h3>רילס</h3><span class='goal'>לשתף</span><p>מהלך נבחר, ערוך לאינסטגרם ולטיקטוק כך שיתאים לרשתות - עם האטה, זום ומוזיקה.</p></div><figure class='m m-tall' data-glyph><video muted loop playsinline preload='none' aria-label='רילס' poster='/brand/landing_reel.jpg'><source src='/brand/landing_reel.mp4' type='video/mp4'></video><p class='mread'>רבע <b class='num'>3</b> · <b class='num'>06:25</b><br>קלע 2 נקודות לייאפ בחדירה</p></figure></article><article class='item'><div class='itxt'><h3>תמונת שיא</h3><span class='goal'>לשתף</span><p>כשיש לך נתון ששווה את זה - תמונה מעוצבת בגודל סטורי ופוסט.</p></div><figure class='m m-img' data-glyph><img src='/Nitai-Rosenberg-izfvey/media/m1.jpg' alt='תמונת שיא' loading='lazy' width='1080' height='1920'></figure></article></div></div>
-    <div><h3 class="half-h">מספרים</h3><figure class='log'><table><thead><tr><th scope='col'>רבע</th><th scope='col'>שעון</th><th scope='col'>פעולה</th></tr></thead><tbody><tr><td class='num'>4</td><td class='num'>00:02</td><td>ריבאונד התקפה</td></tr><tr><td class='num'>4</td><td class='num'>00:42</td><td>קלע 3 נקודות פול-אפ ג&#x27;אמפ</td></tr><tr><td class='num'>4</td><td class='num'>01:24</td><td>ריבאונד הגנה</td></tr><tr class='on'><td class='num'>4</td><td class='num'>02:40</td><td>קלע 2 נקודות הטבעה</td></tr><tr class='on'><td class='num'>4</td><td class='num'>02:48</td><td>חטיפה</td></tr><tr class='on'><td class='num'>4</td><td class='num'>03:00</td><td>קלע 2 נקודות לייאפ</td></tr><tr><td class='num'>4</td><td class='num'>03:05</td><td>ריבאונד הגנה</td></tr><tr><td class='num'>4</td><td class='num'>04:16</td><td>ריבאונד הגנה</td></tr></tbody></table><figcaption>ניתאי רוזנברג · 31.03 מול הפועל אסטרל אילת · מהלך המשחק הרשמי (חלק מהפעולות)</figcaption></figure><article class='item'><div class='itxt'><h3>דוחות</h3><span class='goal'>להשתפר</span><p>דוח אחרי משחק - מה עבד ומה לחזק. דוח מגמה - איך אתה מתפתח לאורך העונה.</p></div><figure class='m m-chart'><ol class='chart' role='list'><li class='g'><span class='bar' aria-hidden='true'>1</span><span class='v'>-1</span><span class='sr'>10.10: PIR -1</span></li><li class='g'><span class='bar' aria-hidden='true'>5</span><i class='tk' style='--t:0.00'></i><span class='v'>-5</span><span class='sr'>15.10: PIR -5</span></li><li class='g ok'><span class='bar' aria-hidden='true'>4<br>4</span><i class='tk' style='--t:0.00'></i><span class='v'>4</span><span class='sr'>24.10: PIR 4 - משחק טוב</span></li><li class='g ok'><span class='bar' aria-hidden='true'>6<br>6<br>6</span><i class='tk' style='--t:0.00'></i><span class='v'>6</span><span class='sr'>29.10: PIR 6 - משחק טוב</span></li><li class='g ok'><span class='bar' aria-hidden='true'>2</span><i class='tk' style='--t:0.00'></i><span class='v'>2</span><span class='sr'>04.11: PIR 2 - משחק טוב</span></li><li class='g ok'><span class='bar' aria-hidden='true'>5<br>5<br>5</span><i class='tk' style='--t:0.10'></i><span class='v'>5</span><span class='sr'>11.11: PIR 5 - משחק טוב</span></li><li class='g ok'><span class='bar' aria-hidden='true'>0<br>0<br>0<br>0<br>0</span><i class='tk' style='--t:0.42'></i><span class='v'>10</span><span class='sr'>18.11: PIR 10 - משחק טוב</span></li><li class='g ok'><span class='bar' aria-hidden='true'>3<br>3</span><i class='tk' style='--t:1.00'></i><span class='v'>3</span><span class='sr'>25.11: PIR 3 - משחק טוב</span></li><li class='g ok'><span class='bar' aria-hidden='true'>2<br>2<br>2<br>2<br>2<br>2<br>2<br>2<br>2<br>2<br>2</span><i class='tk' style='--t:1.00'></i><span class='v'>22</span><span class='sr'>28.11: PIR 22 - משחק טוב</span></li><li class='g ok'><span class='bar' aria-hidden='true'>6<br>6<br>6</span><i class='tk' style='--t:2.06'></i><span class='v'>6</span><span class='sr'>03.12: PIR 6 - משחק טוב</span></li><li class='g'><span class='bar' aria-hidden='true'>2</span><i class='tk' style='--t:2.10'></i><span class='v'>2</span><span class='sr'>09.12: PIR 2</span></li><li class='g ok'><span class='bar' aria-hidden='true'>6<br>6<br>6<br>6<br>6<br>6<br>6<br>6</span><i class='tk' style='--t:2.25'></i><span class='v'>16</span><span class='sr'>16.12: PIR 16 - משחק טוב</span></li><li class='g ok'><span class='bar' aria-hidden='true'>0<br>0<br>0<br>0<br>0</span><i class='tk' style='--t:3.30'></i><span class='v'>10</span><span class='sr'>23.12: PIR 10 - משחק טוב</span></li><li class='g ok'><span class='bar' aria-hidden='true'>7<br>7<br>7<br>7<br>7<br>7<br>7<br>7<br>7</span><i class='tk' style='--t:3.60'></i><span class='v'>17</span><span class='sr'>30.12: PIR 17 - משחק טוב</span></li><li class='g ok'><span class='bar' aria-hidden='true'>0<br>0<br>0<br>0<br>0</span><i class='tk' style='--t:4.15'></i><span class='v'>10</span><span class='sr'>06.01: PIR 10 - משחק טוב</span></li><li class='g'><span class='bar' aria-hidden='true'>9<br>9<br>9<br>9<br>9</span><i class='tk' style='--t:4.55'></i><span class='v'>9</span><span class='sr'>13.01: PIR 9</span></li><li class='g ok'><span class='bar' aria-hidden='true'>9<br>9<br>9<br>9<br>9<br>9<br>9<br>9<br>9<br>9</span><i class='tk' style='--t:4.75'></i><span class='v'>19</span><span class='sr'>20.01: PIR 19 - משחק טוב</span></li><li class='g'><span class='bar' aria-hidden='true'>3<br>3</span><i class='tk' style='--t:5.20'></i><span class='v'>3</span><span class='sr'>30.01: PIR 3</span></li><li class='g ok'><span class='bar' aria-hidden='true'>7<br>7<br>7<br>7<br>7<br>7<br>7<br>7<br>7</span><i class='tk' style='--t:5.20'></i><span class='v'>17</span><span class='sr'>03.02: PIR 17 - משחק טוב</span></li><li class='g'><span class='bar' aria-hidden='true'>8<br>8<br>8<br>8</span><i class='tk' style='--t:4.95'></i><span class='v'>8</span><span class='sr'>10.02: PIR 8</span></li><li class='g ok'><span class='bar' aria-hidden='true'>6<br>6<br>6<br>6<br>6<br>6<br>6<br>6</span><i class='tk' style='--t:5.05'></i><span class='v'>16</span><span class='sr'>17.02: PIR 16 - משחק טוב</span></li><li class='g'><span class='bar' aria-hidden='true'>4<br>4</span><i class='tk' style='--t:5.75'></i><span class='v'>4</span><span class='sr'>24.02: PIR 4</span></li><li class='g'><span class='bar' aria-hidden='true'>0</span><i class='tk' style='--t:5.15'></i><span class='v'>0</span><span class='sr'>27.03: PIR 0</span></li><li class='g ok'><span class='bar' aria-hidden='true'>5<br>5<br>5<br>5<br>5<br>5<br>5<br>5</span><i class='tk' style='--t:4.65'></i><span class='v'>15</span><span class='sr'>31.03: PIR 15 - משחק טוב</span></li><li class='g ok'><span class='bar' aria-hidden='true'>1<br>1<br>1<br>1<br>1<br>1<br>1<br>1<br>1<br>1<br>1</span><i class='tk' style='--t:4.55'></i><span class='v'>21</span><span class='sr'>06.04: PIR 21 - משחק טוב</span></li><li class='g'><span class='bar' aria-hidden='true'>7<br>7<br>7<br>7</span><i class='tk' style='--t:5.10'></i><span class='v'>7</span><span class='sr'>10.04: PIR 7</span></li><li class='g ok'><span class='bar' aria-hidden='true'>0<br>0<br>0<br>0<br>0<br>0<br>0<br>0<br>0<br>0<br>0<br>0<br>0<br>0<br>0</span><i class='tk' style='--t:5.00'></i><span class='v'>30</span><span class='sr'>14.04: PIR 30 - משחק טוב</span></li><li class='g ok'><span class='bar' aria-hidden='true'>6<br>6<br>6<br>6<br>6<br>6<br>6<br>6</span><i class='tk' style='--t:5.55'></i><span class='v'>16</span><span class='sr'>17.04: PIR 16 - משחק טוב</span></li><li class='g'><span class='bar' aria-hidden='true'>4<br>4</span><i class='tk' style='--t:6.20'></i><span class='v'>4</span><span class='sr'>24.04: PIR 4</span></li><li class='g'><span class='bar' aria-hidden='true'>1</span><i class='tk' style='--t:5.55'></i><span class='v'>1</span><span class='sr'>28.04: PIR 1</span></li><li class='g'><span class='bar' aria-hidden='true'>4<br>4</span><i class='tk' style='--t:5.20'></i><span class='v'>4</span><span class='sr'>08.05: PIR 4</span></li><li class='g'><span class='bar' aria-hidden='true'>2</span><i class='tk' style='--t:4.60'></i><span class='v'>2</span><span class='sr'>12.05: PIR 2</span></li><li class='g ok'><span class='bar' aria-hidden='true'>4<br>4<br>4<br>4<br>4<br>4<br>4</span><i class='tk' style='--t:4.50'></i><span class='v'>14</span><span class='sr'>15.05: PIR 14 - משחק טוב</span></li><li class='g'><span class='bar' aria-hidden='true'>6<br>6<br>6</span><i class='tk' style='--t:5.20'></i><span class='v'>6</span><span class='sr'>19.05: PIR 6</span></li><li class='g ok'><span class='bar' aria-hidden='true'>6<br>6<br>6<br>6<br>6<br>6<br>6<br>6</span><i class='tk' style='--t:4.75'></i><span class='v'>16</span><span class='sr'>24.05: PIR 16 - משחק טוב</span></li><li class='g ok'><span class='bar' aria-hidden='true'>7<br>7<br>7<br>7<br>7<br>7<br>7<br>7<br>7<br>7<br>7<br>7<br>7<br>7</span><i class='tk' style='--t:4.50'></i><span class='v'>27</span><span class='sr'>27.05: PIR 27 - משחק טוב</span></li></ol><figcaption>ניתאי רוזנברג · עונת 2025/26 · מדד PIR בכל משחק לפי הנתונים הרשמיים. עמודה כתומה = משחק טוב (מעל ממוצע 10 המשחקים הקודמים פחות 1).</figcaption></figure></article><article class='item'><div class='itxt'><h3>דף שחקן וסקאוט</h3><span class='goal'>להיראות</span><p>הנתונים, החוזקות והמהלכים שלך בדף אחד - לשלוח למאמן, למועדון או לסוכן.</p></div><figure class='m m-page'><img src='/brand/landing_scout.jpg' alt='דף הסקאוט של ניתאי רוזנברג' loading='lazy' width='760' height='410'></figure><div class='statrow'><span><b class='num'>36</b>משחקים</span><span><b class='num'>9.8</b>נק&#x27; למשחק</span><span><b class='num'>9.6</b>PIR למשחק</span><span><b class='num'>30</b>שיא PIR</span></div><a class='lnk' href='/Nitai-Rosenberg-izfvey/scout-he.html'>ראו תיק אמיתי <svg class='ar' viewBox='0 0 20 12' width='20' height='12' aria-hidden='true'><path d='M19 6H2M7 1 2 6l5 5' fill='none' stroke='currentColor' stroke-width='1.8'/></svg></a></article></div>
+    <div><h3 class="half-h">מספרים</h3><article class='item'><div class='itxt'><h3>דוחות</h3><span class='goal'>להשתפר</span><p>דוח אחרי משחק - מה עבד ומה לחזק. דוח מגמה - איך אתה מתפתח לאורך העונה.</p></div></article><article class='item'><div class='itxt'><h3>דף שחקן וסקאוט</h3><span class='goal'>להיראות</span><p>הנתונים, החוזקות והמהלכים שלך בדף אחד - לשלוח למאמן, למועדון או לסוכן.</p></div><figure class='m m-page'><img src='/brand/landing_scout.jpg' alt='דף הסקאוט של ניתאי רוזנברג' loading='lazy' width='760' height='410'></figure><div class='tiles'><div class='t'><b class='num'>9.6</b><span>נק&#x27;</span></div><div class='t'><b class='num'>3.9</b><span>ריב&#x27;</span></div><div class='t'><b class='num'>1.6</b><span>אס&#x27;</span></div><div class='t pir'><b class='num'>9.2</b><span>PIR</span></div><div class='t'><b class='num'>19.9</b><span>דק&#x27;</span></div></div><p class='tcap'>ממוצעים למשחק על פני 40 המשחקים שבחלון</p><a class='lnk' href='/Nitai-Rosenberg-izfvey/scout-he.html'>ראו תיק אמיתי <svg class='ar' viewBox='0 0 20 12' width='20' height='12' aria-hidden='true'><path d='M19 6H2M7 1 2 6l5 5' fill='none' stroke='currentColor' stroke-width='1.8'/></svg></a></article></div>
   </div>
+  <p class="basis">הסרטונים והנתונים מבוססים על שידורי המשחקים והנתונים הרשמיים שפורסמו.</p>
 </div></section>
 <section id="price"><div class="wrap">
   <div class="sh"><h2 class="h2">מחירים</h2><p class="scope">המחירים הם לקליפים ממשחקי ליגה לאומית לגברים וליגת העל לנשים - שם יש שידור ונתונים רשמיים שמאפשרים שירות מהיר. ליגות אחרות - בפנייה אישית.</p></div>
@@ -356,7 +358,7 @@ footer ul{padding-inline-start:18px;margin:0;display:grid;gap:8px}
     x.setTransform(this.dpr,0,0,this.dpr,0,0);x.clearRect(0,0,W,H);x.direction='ltr';
     var lvl=this.overlay?this.level:1;
     if(this.overlay){// the play-by-play feed scrolls up over the whole field; none at the video end
-      var off=(performance.now()*0.018)%H;x.globalAlpha=Math.min(1,lvl*1.25);
+      var off=(performance.now()*0.018)%H;x.globalAlpha=Math.min(1,Math.pow(lvl,1.5)*1.25);
       x.drawImage(this.bg,0,-off,W,H);x.drawImage(this.bg,0,H-off,W,H);x.globalAlpha=1;
       if(lvl<=0.02)return}
     else x.drawImage(this.bg,0,0,W,H);
@@ -386,7 +388,7 @@ footer ul{padding-inline-start:18px;margin:0;display:grid;gap:8px}
       var gx=w.x+i*c,gy=w.y+r*cell;if(this.masks.length&&this.masked(gx,gy,c))continue;
       B[Math.min(4,(v*5)|0)].push(gx,gy,k)}
     this.prev=L;
-    x.textBaseline='top';var fs=(cell*0.9).toFixed(1),sl=STREAM.length;if(this.overlay)x.globalAlpha=Math.min(1,0.15+0.95*lvl);
+    x.textBaseline='top';var fs=(cell*0.9).toFixed(1),sl=STREAM.length;if(this.overlay)x.globalAlpha=Math.min(1,0.1+0.9*Math.pow(lvl,1.5));
     for(var b=0;b<5;b++){var a=B[b];if(!a.length)continue;
       x.font=(b>=3?'800 ':b>=1?'500 ':'200 ')+fs+'px '+FONT;
       x.fillStyle=b===4?'#ffe2c4':'rgba(235,133,33,'+(0.22+b*0.19).toFixed(2)+')';
@@ -417,7 +419,7 @@ footer ul{padding-inline-start:18px;margin:0;display:grid;gap:8px}
   }
   // the handle: from the clean move (video) to the move carrying its data
   function setRes(){var v=+res.value/100;
-    G.level=v;G.cell=desk?11:9;hv.style.filter='brightness('+(1-0.5*v).toFixed(2)+')';
+    G.level=v;G.cell=desk?11:9;hv.style.filter='brightness('+(1-0.5*Math.pow(v,1.5)).toFixed(2)+')';
     res.setAttribute('aria-valuetext',v<0.08?'וידאו':v>0.92?'נתונים':'וידאו ונתונים');
     G.drawBg(true);G.draw();
   }
@@ -432,7 +434,7 @@ footer ul{padding-inline-start:18px;margin:0;display:grid;gap:8px}
   document.querySelectorAll('[data-glyph]').forEach(function(fig){
     if(reduce)return;var m=fig.querySelector('video,img');
     var cv=document.createElement('canvas');cv.setAttribute('aria-hidden','true');fig.appendChild(cv);
-    var g=new Glyphs(cv,m);g.focusY=0.55;g.overlay=true;g.level=0.4;items.push({fig:fig,m:m,g:g,on:false});
+    var g=new Glyphs(cv,m);g.focusY=0.55;g.overlay=true;g.level=0.25;items.push({fig:fig,m:m,g:g,on:false});
   });
   function sizeItems(){items.forEach(function(it){var W=it.fig.clientWidth,H=it.fig.clientHeight;it.g.size(W,H);
     it.g.win={x:0,y:0,w:W,h:H};it.g.cell=8;it.g.drawBg(true);it.g.draw()})}
