@@ -1,12 +1,490 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="robots" content="noindex"><title>ClipIQ</title>
-<style>html,body{margin:0;height:100%;background:#0b1220;color:#e2e8f0;
-font-family:system-ui,-apple-system,"Segoe UI",Arial,sans-serif}
-main{min-height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;
-text-align:center;padding:24px;box-sizing:border-box}
-img{width:min(320px,78vw);height:auto}
-.s{margin:22px 0 6px;font-size:clamp(18px,4.6vw,24px);font-weight:600;letter-spacing:.2px}
-.c{color:#38bdf8;font-size:clamp(15px,3.8vw,18px)}</style></head>
-<body><main><img src="https://clipiq.co.il/brand/logo_lockup_h_light.png" alt="ClipIQ">
-<div class="s">Your game. Your story.</div><div class="c">Coming soon...</div></main></body></html>
+<!doctype html><html lang="he" dir="rtl"><head><meta name="referrer" content="no-referrer">
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>ClipIQ - Your game. Your story.</title><meta name="description" content="היילייטס, רילסים ונתונים מכל משחק - לשחקני כדורסל בישראל. לראות, להשתפר, לשתף ולהיראות.">
+<meta name="robots" content="index,follow"><link rel="canonical" href="https://clipiq.co.il/">
+<link rel="alternate" hreflang="he" href="https://clipiq.co.il/"><link rel="alternate" hreflang="en" href="https://clipiq.co.il/en/">
+<meta property="og:type" content="website"><meta property="og:title" content="ClipIQ - Your game. Your story.">
+<meta property="og:description" content="היילייטס, רילסים ונתונים מכל משחק - לשחקני כדורסל בישראל. לראות, להשתפר, לשתף ולהיראות."><meta property="og:image" content="https://clipiq.co.il/brand/og_landing.png">
+<meta property="og:url" content="https://clipiq.co.il/"><meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#142537"><link rel='icon' type='image/png' href='data:image/png;base64,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'><meta http-equiv='Content-Security-Policy' content="default-src 'self'; img-src 'self' data:; media-src 'self'; style-src 'self' 'unsafe-inline'; font-src 'self'; script-src 'self' 'unsafe-inline'; connect-src 'self' https://clipiq-counter.clipiq-il.workers.dev; object-src 'none'; base-uri 'self'; form-action 'none'">
+<link rel="preload" href="/brand/fonts/Karantina-Bold.woff" as="font" type="font/woff" crossorigin>
+<style>
+@font-face{font-family:"Karantina";src:url(/brand/fonts/Karantina-Bold.woff) format("woff");font-weight:700;font-display:swap}
+@font-face{font-family:"Assistant";src:url(/brand/fonts/Assistant.woff) format("woff");font-weight:200 800;font-display:swap}
+@font-face{font-family:"Martian";src:url(/brand/fonts/MartianMono.woff) format("woff");font-weight:100 800;font-stretch:75% 112.5%;font-display:swap}
+:root{
+  --ground:#142537;--ground-2:#1a2f45;--ground-3:#223a54;
+  --ink:#eb8521;--ink-2:#f6a254;--ink-deep:#b9620f;
+  --paper:#f4efe4;--mute:#a9b6d3;--line:rgba(169,182,211,.2);--line-2:rgba(169,182,211,.38);
+  --display:"Karantina","Assistant",sans-serif;--body:"Assistant",system-ui,sans-serif;--num:"Martian","Assistant",ui-monospace,monospace;
+  --g:clamp(16px,4vw,48px);--wrap:1240px;
+  --ease:cubic-bezier(.16,1,.3,1);
+}
+*{box-sizing:border-box}
+html{background:var(--ground);color:var(--paper);-webkit-text-size-adjust:100%;scrollbar-color:var(--ink-deep) var(--ground)}
+body{margin:0;font:400 18px/1.6 var(--body);background:var(--ground);overflow-x:hidden}
+::selection{background:var(--ink);color:var(--ground)}
+a{color:inherit;text-underline-offset:.22em;text-decoration-thickness:1px}
+:focus-visible{outline:2px solid var(--ink);outline-offset:3px}
+img,video{display:block;max-width:100%}
+h1,h2,h3{margin:0;font-weight:700;text-wrap:balance}
+p{margin:0}
+.num{font-family:var(--num);font-variant-numeric:tabular-nums;font-feature-settings:"tnum"}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 var(--g)}
+
+/* ── top ─────────────────────────────── */
+.top{position:relative;z-index:3;display:flex;align-items:center;justify-content:space-between;gap:16px;padding:14px var(--g);border-bottom:1px solid var(--line)}
+.brand{display:flex;flex-direction:column;align-items:flex-start;gap:2px;text-decoration:none}
+.brand img{height:30px;width:auto}
+.tagline{font:600 11px/1 var(--num);letter-spacing:.08em;color:var(--mute);direction:ltr}
+.lang{font:600 14px/1 var(--num);color:var(--mute);text-decoration:none;padding:10px 0}
+.lang:hover{color:var(--paper)}
+
+/* ── hero: the field ─────────────────── */
+.hero{position:relative}
+.field{position:relative;height:min(50svh,460px);overflow:hidden;background:var(--ground);touch-action:pan-y}
+.field canvas{position:absolute;inset:0;width:100%;height:100%}
+.field video{position:absolute;object-fit:cover;pointer-events:none}
+.field canvas{z-index:1}
+.ctrl{display:grid;grid-template-columns:auto 1fr auto;align-items:center;gap:12px;padding:4px var(--g) 0}
+.ctrl span{font:600 14px/1 var(--body);color:var(--mute);white-space:nowrap}
+.ctrl span b{color:var(--ink);font-weight:700}
+input[type=range]{-webkit-appearance:none;appearance:none;width:100%;height:44px;background:transparent;margin:0;cursor:ew-resize}
+input[type=range]::-webkit-slider-runnable-track{height:2px;background:repeating-linear-gradient(90deg,var(--line-2) 0 6px,transparent 6px 10px)}
+input[type=range]::-moz-range-track{height:2px;background:repeating-linear-gradient(90deg,var(--line-2) 0 6px,transparent 6px 10px)}
+input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:22px;height:30px;margin-top:-14px;background:var(--ink);border:0;border-radius:2px}
+input[type=range]::-moz-range-thumb{width:22px;height:30px;background:var(--ink);border:0;border-radius:2px}
+.read{position:absolute;top:12px;inset-inline:var(--g);z-index:2;font:500 14px/1.45 var(--body);color:var(--mute);pointer-events:none}
+.read .num{font-family:var(--num);font-weight:700;color:var(--ink)}
+.hero{position:relative}
+.read b{color:var(--paper);font-weight:600}
+.read .src{display:block;color:var(--mute);font-size:13px}
+.copy{padding:12px var(--g) 28px}
+h1{font:700 clamp(48px,13.5vw,148px)/.84 var(--display);letter-spacing:-.01em;color:var(--paper);direction:ltr;text-align:left}
+[dir=rtl] h1{text-align:right}
+h1 em{font-style:normal;color:var(--ink)}
+.sub{margin-top:12px;max-width:34ch;font-size:18px;line-height:1.45;color:var(--paper)}
+.acts{display:flex;flex-wrap:wrap;align-items:center;gap:10px 20px;margin-top:16px}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:52px;padding:0 26px;background:var(--ink);color:var(--ground);font:800 19px/1 var(--body);text-decoration:none;border:0;border-radius:3px;cursor:pointer;transition:background .2s var(--ease),transform .2s var(--ease)}
+.btn:hover{background:var(--ink-2)}
+.btn:active{transform:translateY(1px)}
+.pilot{font:700 15px/1.4 var(--body);color:var(--ink)}
+
+/* ── sections ────────────────────────── */
+section{padding:clamp(72px,11vw,140px) 0 clamp(48px,7vw,96px)}
+.h2{font:700 clamp(52px,10vw,104px)/.88 var(--display);color:var(--paper)}
+.lede{margin-top:16px;max-width:52ch;color:var(--mute);font-size:19px}
+.band{border-block:1px solid var(--line);padding:16px 0;overflow:hidden}
+.band p{font:600 16px/1.6 var(--body);color:var(--mute);display:flex;flex-wrap:wrap;gap:6px 22px}
+.band b{color:var(--ink);font-weight:700;font-family:var(--num)}
+
+/* two halves: what you share / what you learn */
+.halves{display:grid;gap:56px;margin-top:48px}
+.half-h{padding-bottom:10px;border-bottom:2px solid var(--ink);font:700 clamp(64px,9vw,96px)/.85 var(--display);color:var(--ink)}
+.item{display:grid;gap:16px;padding:28px 0;border-bottom:1px solid var(--line)}
+.itxt{display:grid;grid-template-columns:1fr auto;gap:6px 16px;align-items:baseline}
+.itxt h3{font:700 44px/.9 var(--display);color:var(--paper)}
+.itxt .goal{grid-column:2;grid-row:1;font:700 14px/1 var(--body);color:var(--ink)}
+.itxt p{grid-column:1/-1;color:var(--mute);max-width:46ch}
+.m{position:relative;margin:0;background:var(--ground);overflow:hidden}
+.m canvas{position:absolute;inset:0;width:100%;height:100%;transition:opacity .6s var(--ease)}
+.m canvas{pointer-events:none}
+.m video,.m img{transition:opacity .6s var(--ease)}
+.mread{margin-top:10px;font:500 14px/1.45 var(--body);color:var(--mute)}
+.mread .num{font-family:var(--num);color:var(--ink);font-weight:700}
+.m video,.m img{width:100%;height:100%;object-fit:cover}
+.m-wide{aspect-ratio:16/9}
+.m-tall,.m-img{aspect-ratio:9/16}
+.pair{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.pair .item{border-bottom:0;align-content:start}
+.pair .itxt h3{font-size:36px}
+.pair .itxt{grid-template-columns:1fr}
+.pair .itxt .goal{grid-column:1;grid-row:auto;justify-self:start}
+.m-chart{background:none;overflow:visible;padding-top:4px}
+.chart{list-style:none;margin:0;padding:0 0 0;display:flex;align-items:flex-end;gap:2px;height:150px;border-bottom:1px solid var(--line-2);direction:ltr}
+.chart li{position:relative;flex:1;display:flex;flex-direction:column;justify-content:flex-end;align-items:center;min-width:0}
+.chart .bar{font:700 8px/8px var(--num);color:rgba(169,182,211,.45);text-align:center}
+.chart .ok .bar{color:var(--ink)}
+.chart .v{display:none}
+.chart .tk{position:absolute;left:-1px;right:-1px;bottom:calc(var(--t) * 8px);height:2px;background:var(--paper);opacity:.55}
+.m-chart figcaption{margin-top:12px;font:500 14px/1.55 var(--body);color:var(--mute)}
+.statrow{display:flex;flex-wrap:wrap;gap:4px 22px;font:500 15px/1.3 var(--body);color:var(--mute)}
+.statrow span{display:flex;align-items:baseline;gap:7px}
+.statrow b{font:700 30px/1.1 var(--num);color:var(--paper);letter-spacing:-.03em}
+.lnk{display:inline-block;margin-top:18px;color:var(--ink);font-weight:700;text-decoration:none;padding:8px 0}
+.lnk:hover{text-decoration:underline}
+.ar{display:inline-block;vertical-align:middle;margin-inline-start:6px}
+.m-page{border:1px solid var(--line-2)}
+.m-page img{height:auto}
+.log{margin:24px 0 8px}
+.log table{margin:0;direction:rtl}
+.log th{font:600 13px/1 var(--body);color:var(--mute);padding:8px 0;border-bottom:1px solid var(--line-2)}
+.log td{font:500 15px/1.4 var(--body);color:var(--mute);padding:9px 0;text-align:start;white-space:normal}
+.log td.num{font-family:var(--num);color:var(--paper);width:4.2em;direction:ltr;text-align:right}
+.log tr.on td{color:var(--ink)}
+.log figcaption{margin-top:10px;font:500 14px/1.5 var(--body);color:var(--mute)}
+
+/* pricing */
+.scope{margin-top:14px;max-width:62ch;color:var(--mute)}
+.founders{margin-top:28px;padding:14px 0;border-block:2px solid var(--ink);color:var(--ink);font:700 18px/1.5 var(--body);max-width:70ch}
+.prows{margin-top:8px;display:grid}
+.prow{display:grid;grid-template-columns:1fr auto;gap:2px 20px;align-items:baseline;padding:22px 0;border-bottom:1px solid var(--line-2)}
+.prow h3{font:700 40px/1 var(--display);grid-column:1}
+.badge{font:700 15px/1 var(--body);color:var(--ink);margin-inline-start:10px;vertical-align:middle}
+.pr{grid-column:2;grid-row:1/span 3;display:flex;flex-direction:column;align-items:flex-end;gap:2px}
+.pr b{font:700 clamp(56px,13vw,88px)/.95 var(--num);letter-spacing:-.04em;color:var(--paper);direction:ltr}
+.pr span{color:var(--mute);font-size:16px}
+.pn{color:var(--paper);font-weight:600;grid-column:1}
+.pl{color:var(--mute);font-size:16px;grid-column:1;max-width:44ch}
+.inc{margin:22px 0 26px;padding:0;list-style:none;display:grid;gap:8px;max-width:60ch}
+.inc li{position:relative;padding-inline-start:22px;color:var(--paper);font-size:17px;line-height:1.45}
+.inc li::before{content:"";position:absolute;inset-inline-start:0;top:.62em;width:10px;height:2px;background:var(--ink)}
+.fine{margin-top:14px;font-size:15px;color:var(--mute);max-width:70ch}
+.tbl-h{margin-top:56px;font:700 32px/1 var(--display)}
+table{width:100%;border-collapse:collapse;margin-top:12px}
+th,td{text-align:start;padding:13px 0;border-bottom:1px solid var(--line);vertical-align:top;font-weight:500}
+th{color:var(--paper);padding-inline-end:16px}
+th small{display:block;color:var(--mute);font-size:15px;font-weight:400;margin-top:2px}
+td{font:700 17px/1.5 var(--body);color:var(--ink);white-space:nowrap;text-align:end;font-variant-numeric:tabular-nums}
+details.more{margin-top:56px;border-top:1px solid var(--line-2)}
+details.more>summary{cursor:pointer;list-style:none;padding:18px 0;font:700 32px/1 var(--display);display:flex;justify-content:space-between;align-items:center}
+details>summary::-webkit-details-marker{display:none}
+details.more>summary::after,.faq summary::after,footer summary::after{content:"";flex:none;width:16px;height:16px;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath d='M8 1v14M1 8h14' stroke='%23eb8521' stroke-width='1.8'/%3E%3C/svg%3E") center/contain no-repeat;transition:transform .25s var(--ease)}
+details[open]>summary::after{transform:rotate(45deg)}
+
+/* risk, trust, about */
+.risk{list-style:none;margin:36px 0 0;padding:0;display:grid;gap:0}
+.risk li{padding:22px 0;border-top:1px solid var(--line);display:grid;gap:6px}
+.risk h3{font:700 34px/1 var(--display);color:var(--ink)}
+.risk p{color:var(--mute);max-width:52ch}
+.trust{margin-top:56px;padding-top:22px;border-top:2px solid var(--ink)}
+.trust h3{font:700 30px/1 var(--display)}
+.trust p{margin-top:8px;color:var(--mute);max-width:60ch}
+.about{display:grid;gap:22px}
+.me{display:flex;align-items:baseline;gap:14px;flex-wrap:wrap}
+.me b{font:700 44px/1 var(--display);color:var(--paper)}
+.me span{font:500 16px/1.4 var(--body);color:var(--mute)}
+.about p{max-width:62ch;color:var(--paper);font-size:19px;line-height:1.65}
+.about p+p{margin-top:14px}
+
+/* join */
+.join{background:var(--ground-2);border-block:1px solid var(--line)}
+form{margin-top:28px;display:grid;gap:18px;max-width:620px}
+label.f{display:grid;gap:6px;font-weight:600}
+input[type=text]{height:52px;padding:0 14px;background:var(--ground);border:1px solid var(--line-2);border-radius:3px;color:var(--paper);font:500 18px var(--body)}
+input[type=text]::placeholder{color:var(--mute)}
+input[type=text]:focus{border-color:var(--ink);outline:none;box-shadow:0 0 0 1px var(--ink)}
+fieldset{border:0;margin:0;padding:0;display:grid;gap:8px}
+legend{font-weight:600;margin-bottom:6px}
+.opt{display:flex;align-items:center;gap:12px;min-height:48px;padding:0 14px;border:1px solid var(--line-2);border-radius:3px;cursor:pointer}
+.opt:has(input:checked){border-color:var(--ink);background:rgba(235,133,33,.08)}
+input[type=radio],input[type=checkbox]{accent-color:var(--ink);width:20px;height:20px;margin:0;flex:none}
+.chk{display:flex;gap:12px;align-items:flex-start;font-size:16px;color:var(--mute);line-height:1.5}
+.chk a{color:var(--paper)}
+.deliver{font-size:16px;color:var(--mute)}
+.err{color:var(--ink-2);font-weight:700;min-height:1.5em}
+
+/* faq + end + footer */
+.faq details{border-top:1px solid var(--line)}
+.faq summary{cursor:pointer;list-style:none;display:flex;justify-content:space-between;gap:16px;align-items:center;padding:18px 0;font-weight:700;font-size:20px}
+.faq details p{padding:0 0 20px;color:var(--mute);max-width:66ch}
+.end{text-align:center;padding:clamp(80px,12vw,150px) 0}
+.end .h2{max-width:14ch;margin:0 auto}
+.end .btn{margin-top:28px}
+.end .clubs{display:block;margin-top:20px;color:var(--mute);text-decoration:none;padding:8px}
+.end .clubs:hover{color:var(--paper)}
+footer{border-top:1px solid var(--line);padding:36px 0 120px;font-size:15px;color:var(--mute)}
+footer details{border-bottom:1px solid var(--line)}
+footer summary{cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;padding:14px 0;color:var(--paper);font-weight:600}
+
+footer details>div{padding:0 0 18px;max-width:72ch}
+footer ul{padding-inline-start:18px;margin:0;display:grid;gap:8px}
+.biz{margin-top:24px;font:500 14px/1.5 var(--body)}
+
+/* sticky join on phones */
+.stick{position:fixed;inset-inline:0;bottom:0;z-index:9;padding:10px var(--g) calc(10px + env(safe-area-inset-bottom));background:var(--ground);border-top:1px solid var(--line-2);transform:translateY(110%);transition:transform .35s var(--ease)}
+.stick.on{transform:none}
+.stick .btn{width:100%}
+
+/* ── desktop ─────────────────────────── */
+@media (min-width:900px){
+  body{font-size:19px}
+  .hero{display:block}
+  .field{height:calc(100svh - 61px);min-height:620px;max-height:980px}
+  .hero-over{position:absolute;inset:0;pointer-events:none;display:grid;grid-template-columns:1fr 1fr;align-items:end}
+  .hero-over>*{pointer-events:auto}
+  .copy{grid-column:1;align-self:center;padding:0;padding-inline-start:var(--g);max-width:640px}
+  .dock{position:absolute;padding:0}
+  .ctrl{padding-inline:0}
+  .read{position:static;margin-top:4px}
+  h1{font-size:clamp(110px,10.5vw,176px)}
+  .sub{font-size:22px}
+  .halves{grid-template-columns:1fr 1fr;gap:clamp(40px,6vw,96px)}
+  .halves>div:last-child{position:sticky;top:24px;align-self:start}
+
+  .stick{display:none}
+  .wrap:has(>.sh){display:grid;grid-template-columns:minmax(0,4fr) minmax(0,7fr);column-gap:clamp(40px,6vw,96px);align-items:start}
+  .sh{position:sticky;top:32px}
+  .sb>:first-child{margin-top:0}
+  .about .sb{display:grid;gap:22px}
+  .chart{height:190px}
+}
+@media (max-width:899px){.read{background:rgba(20,37,55,.84);padding:8px 10px;inset-inline:12px;border-radius:2px}.hero{display:flex;flex-direction:column}.hero-over{display:contents}.dock{order:1}.copy{order:2}}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+.btn[disabled]{background:var(--line-2);color:var(--mute);cursor:not-allowed}
+.pair .item{display:flex;flex-direction:column}
+.pair .itxt{flex:1}
+.m .mread{position:absolute;top:0;inset-inline:0;z-index:2;margin:0;padding:8px 10px;background:rgba(20,37,55,.84);font-size:13px;color:var(--paper)}
+@media (max-width:899px){.hero.land .field{height:auto;aspect-ratio:16/9}.hero.land .read{position:static;background:none;padding:10px var(--g) 0}}
+.btn svg{margin-inline-end:10px}
+.need{font-size:15px;color:var(--mute)}
+.socials{margin-bottom:18px}
+</style></head><body>
+<header class="top"><a class="brand" href="/" aria-label="ClipIQ"><img class='logo' src='data:image/png;base64,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' alt='ClipIQ' style='height:30px;width:auto'><span class="tagline">YOUR GAME, YOUR STORY</span></a>
+<a class="lang" href="/en/" hreflang="en">English</a></header>
+<main>
+<section class="hero land" style="padding:0" aria-label="ClipIQ">
+  <div class="field" id="field" data-aspect="1.7778"><canvas id='glyphs' aria-hidden='true'></canvas><video id='reel' src='/brand/landing_hero.mp4' poster='/brand/landing_hero.jpg' muted loop playsinline preload='auto' aria-label='ניתאי רוזנברג - קלע 2 נקודות לייאפ + חטיפה + קלע 2 נקודות הטבעה'></video></div>
+  <div class="hero-over" id="over">
+    <div class="copy" id="copy">
+      <h1><span>Your game. <em>Your story.</em></span></h1>
+      <p class="sub">היילייטס, רילס ונתונים מכל משחק שלך - לראות, להשתפר ולשתף את עצמך. הכל במקום אחד ובמהירות!</p>
+      <div class="acts"><a class='btn' href='#join'>אני רוצה להצטרף</a><a class="pilot" href="#price" style="text-decoration:none">מבצע מייסדים: 10 מקומות · 30% הנחה עד סוף העונה</a></div>
+    </div>
+    <div class="dock" id="dock">
+      <div class="ctrl"><span>וידאו</span><input id="res" type="range" min="0" max="100" value="45" aria-label="כמות הנתונים על הווידאו" aria-valuetext="וידאו"><span>נתונים</span></div>
+      <p class='read' id='read'>רבע <b class='num'>4</b> · <b class='num'>03:00</b> · קלע 2 נקודות לייאפ + חטיפה + קלע 2 נקודות הטבעה<br><b class='num'>14</b> נק&#x27; · <b class='num'>2/4</b> לשלוש · PIR <b class='num'>15</b><span class='src'>ניתאי רוזנברג, 31.03 מול הפועל אסטרל אילת · מהלך המשחק הרשמי</span></p>
+    </div>
+  </div>
+</section>
+<div class="band"><div class="wrap"><p><span><b class="num">600+</b> משחקים נותחו</span><span>ליגה לאומית גברים, ליגת העל לנשים · ליגת העל וליגות נוספות בהמשך</span><span>עברית ואנגלית</span></p></div></div>
+<section id="what"><div class="wrap">
+  <h2 class="h2">המשחק שלך ממשיך אחרי השריקה</h2>
+  <p class="lede">אתה משחק - ואנחנו הופכים כל משחק לקליפים, לנתונים ולדוחות. הכל אצלך במקום אחד.</p>
+  <div class="halves">
+    <div><h3 class="half-h">וידאו</h3><article class='item'><div class='itxt'><h3>היילייטס מהמשחקים הטובים</h3><span class='goal'>לשתף</span><p>המהלכים הטובים שלך - ערוכים, מסודרים ומוכנים לצפייה ושיתוף.</p></div><figure class='m m-wide' data-glyph><video muted loop playsinline preload='none' aria-label='היילייטס מהמשחקים הטובים' poster='/brand/landing_hl.jpg'><source src='/brand/landing_hl.mp4' type='video/mp4'></video></figure></article><div class='pair'><article class='item'><div class='itxt'><h3>רילס</h3><span class='goal'>לשתף</span><p>מהלך נבחר, ערוך לאינסטגרם ולטיקטוק כך שיתאים לרשתות - עם האטה, זום ומוזיקה.</p></div><figure class='m m-tall' data-glyph><video muted loop playsinline preload='none' aria-label='רילס' poster='/brand/landing_reel.jpg'><source src='/brand/landing_reel.mp4' type='video/mp4'></video><p class='mread'>רבע <b class='num'>3</b> · <b class='num'>06:25</b><br>קלע 2 נקודות לייאפ בחדירה</p></figure></article><article class='item'><div class='itxt'><h3>תמונת שיא</h3><span class='goal'>לשתף</span><p>כשיש לך נתון ששווה את זה - תמונה מעוצבת בגודל סטורי ופוסט.</p></div><figure class='m m-img' data-glyph><img src='/Nitai-Rosenberg-izfvey/media/m1.jpg' alt='תמונת שיא' loading='lazy' width='1080' height='1920'></figure></article></div></div>
+    <div><h3 class="half-h">מספרים</h3><figure class='log'><table><thead><tr><th scope='col'>רבע</th><th scope='col'>שעון</th><th scope='col'>פעולה</th></tr></thead><tbody><tr><td class='num'>4</td><td class='num'>00:02</td><td>ריבאונד התקפה</td></tr><tr><td class='num'>4</td><td class='num'>00:42</td><td>קלע 3 נקודות פול-אפ ג&#x27;אמפ</td></tr><tr><td class='num'>4</td><td class='num'>01:24</td><td>ריבאונד הגנה</td></tr><tr class='on'><td class='num'>4</td><td class='num'>02:40</td><td>קלע 2 נקודות הטבעה</td></tr><tr class='on'><td class='num'>4</td><td class='num'>02:48</td><td>חטיפה</td></tr><tr class='on'><td class='num'>4</td><td class='num'>03:00</td><td>קלע 2 נקודות לייאפ</td></tr><tr><td class='num'>4</td><td class='num'>03:05</td><td>ריבאונד הגנה</td></tr><tr><td class='num'>4</td><td class='num'>04:16</td><td>ריבאונד הגנה</td></tr></tbody></table><figcaption>ניתאי רוזנברג · 31.03 מול הפועל אסטרל אילת · מהלך המשחק הרשמי (חלק מהפעולות)</figcaption></figure><article class='item'><div class='itxt'><h3>דוחות</h3><span class='goal'>להשתפר</span><p>דוח אחרי משחק - מה עבד ומה לחזק. דוח מגמה - איך אתה מתפתח לאורך העונה.</p></div><figure class='m m-chart'><ol class='chart' role='list'><li class='g'><span class='bar' aria-hidden='true'>1</span><span class='v'>-1</span><span class='sr'>10.10: PIR -1</span></li><li class='g'><span class='bar' aria-hidden='true'>5</span><i class='tk' style='--t:0.00'></i><span class='v'>-5</span><span class='sr'>15.10: PIR -5</span></li><li class='g ok'><span class='bar' aria-hidden='true'>4<br>4</span><i class='tk' style='--t:0.00'></i><span class='v'>4</span><span class='sr'>24.10: PIR 4 - משחק טוב</span></li><li class='g ok'><span class='bar' aria-hidden='true'>6<br>6<br>6</span><i class='tk' style='--t:0.00'></i><span class='v'>6</span><span class='sr'>29.10: PIR 6 - משחק טוב</span></li><li class='g ok'><span class='bar' aria-hidden='true'>2</span><i class='tk' style='--t:0.00'></i><span class='v'>2</span><span class='sr'>04.11: PIR 2 - משחק טוב</span></li><li class='g ok'><span class='bar' aria-hidden='true'>5<br>5<br>5</span><i class='tk' style='--t:0.10'></i><span class='v'>5</span><span class='sr'>11.11: PIR 5 - משחק טוב</span></li><li class='g ok'><span class='bar' aria-hidden='true'>0<br>0<br>0<br>0<br>0</span><i class='tk' style='--t:0.42'></i><span class='v'>10</span><span class='sr'>18.11: PIR 10 - משחק טוב</span></li><li class='g ok'><span class='bar' aria-hidden='true'>3<br>3</span><i class='tk' style='--t:1.00'></i><span class='v'>3</span><span class='sr'>25.11: PIR 3 - משחק טוב</span></li><li class='g ok'><span class='bar' aria-hidden='true'>2<br>2<br>2<br>2<br>2<br>2<br>2<br>2<br>2<br>2<br>2</span><i class='tk' style='--t:1.00'></i><span class='v'>22</span><span class='sr'>28.11: PIR 22 - משחק טוב</span></li><li class='g ok'><span class='bar' aria-hidden='true'>6<br>6<br>6</span><i class='tk' style='--t:2.06'></i><span class='v'>6</span><span class='sr'>03.12: PIR 6 - משחק טוב</span></li><li class='g'><span class='bar' aria-hidden='true'>2</span><i class='tk' style='--t:2.10'></i><span class='v'>2</span><span class='sr'>09.12: PIR 2</span></li><li class='g ok'><span class='bar' aria-hidden='true'>6<br>6<br>6<br>6<br>6<br>6<br>6<br>6</span><i class='tk' style='--t:2.25'></i><span class='v'>16</span><span class='sr'>16.12: PIR 16 - משחק טוב</span></li><li class='g ok'><span class='bar' aria-hidden='true'>0<br>0<br>0<br>0<br>0</span><i class='tk' style='--t:3.30'></i><span class='v'>10</span><span class='sr'>23.12: PIR 10 - משחק טוב</span></li><li class='g ok'><span class='bar' aria-hidden='true'>7<br>7<br>7<br>7<br>7<br>7<br>7<br>7<br>7</span><i class='tk' style='--t:3.60'></i><span class='v'>17</span><span class='sr'>30.12: PIR 17 - משחק טוב</span></li><li class='g ok'><span class='bar' aria-hidden='true'>0<br>0<br>0<br>0<br>0</span><i class='tk' style='--t:4.15'></i><span class='v'>10</span><span class='sr'>06.01: PIR 10 - משחק טוב</span></li><li class='g'><span class='bar' aria-hidden='true'>9<br>9<br>9<br>9<br>9</span><i class='tk' style='--t:4.55'></i><span class='v'>9</span><span class='sr'>13.01: PIR 9</span></li><li class='g ok'><span class='bar' aria-hidden='true'>9<br>9<br>9<br>9<br>9<br>9<br>9<br>9<br>9<br>9</span><i class='tk' style='--t:4.75'></i><span class='v'>19</span><span class='sr'>20.01: PIR 19 - משחק טוב</span></li><li class='g'><span class='bar' aria-hidden='true'>3<br>3</span><i class='tk' style='--t:5.20'></i><span class='v'>3</span><span class='sr'>30.01: PIR 3</span></li><li class='g ok'><span class='bar' aria-hidden='true'>7<br>7<br>7<br>7<br>7<br>7<br>7<br>7<br>7</span><i class='tk' style='--t:5.20'></i><span class='v'>17</span><span class='sr'>03.02: PIR 17 - משחק טוב</span></li><li class='g'><span class='bar' aria-hidden='true'>8<br>8<br>8<br>8</span><i class='tk' style='--t:4.95'></i><span class='v'>8</span><span class='sr'>10.02: PIR 8</span></li><li class='g ok'><span class='bar' aria-hidden='true'>6<br>6<br>6<br>6<br>6<br>6<br>6<br>6</span><i class='tk' style='--t:5.05'></i><span class='v'>16</span><span class='sr'>17.02: PIR 16 - משחק טוב</span></li><li class='g'><span class='bar' aria-hidden='true'>4<br>4</span><i class='tk' style='--t:5.75'></i><span class='v'>4</span><span class='sr'>24.02: PIR 4</span></li><li class='g'><span class='bar' aria-hidden='true'>0</span><i class='tk' style='--t:5.15'></i><span class='v'>0</span><span class='sr'>27.03: PIR 0</span></li><li class='g ok'><span class='bar' aria-hidden='true'>5<br>5<br>5<br>5<br>5<br>5<br>5<br>5</span><i class='tk' style='--t:4.65'></i><span class='v'>15</span><span class='sr'>31.03: PIR 15 - משחק טוב</span></li><li class='g ok'><span class='bar' aria-hidden='true'>1<br>1<br>1<br>1<br>1<br>1<br>1<br>1<br>1<br>1<br>1</span><i class='tk' style='--t:4.55'></i><span class='v'>21</span><span class='sr'>06.04: PIR 21 - משחק טוב</span></li><li class='g'><span class='bar' aria-hidden='true'>7<br>7<br>7<br>7</span><i class='tk' style='--t:5.10'></i><span class='v'>7</span><span class='sr'>10.04: PIR 7</span></li><li class='g ok'><span class='bar' aria-hidden='true'>0<br>0<br>0<br>0<br>0<br>0<br>0<br>0<br>0<br>0<br>0<br>0<br>0<br>0<br>0</span><i class='tk' style='--t:5.00'></i><span class='v'>30</span><span class='sr'>14.04: PIR 30 - משחק טוב</span></li><li class='g ok'><span class='bar' aria-hidden='true'>6<br>6<br>6<br>6<br>6<br>6<br>6<br>6</span><i class='tk' style='--t:5.55'></i><span class='v'>16</span><span class='sr'>17.04: PIR 16 - משחק טוב</span></li><li class='g'><span class='bar' aria-hidden='true'>4<br>4</span><i class='tk' style='--t:6.20'></i><span class='v'>4</span><span class='sr'>24.04: PIR 4</span></li><li class='g'><span class='bar' aria-hidden='true'>1</span><i class='tk' style='--t:5.55'></i><span class='v'>1</span><span class='sr'>28.04: PIR 1</span></li><li class='g'><span class='bar' aria-hidden='true'>4<br>4</span><i class='tk' style='--t:5.20'></i><span class='v'>4</span><span class='sr'>08.05: PIR 4</span></li><li class='g'><span class='bar' aria-hidden='true'>2</span><i class='tk' style='--t:4.60'></i><span class='v'>2</span><span class='sr'>12.05: PIR 2</span></li><li class='g ok'><span class='bar' aria-hidden='true'>4<br>4<br>4<br>4<br>4<br>4<br>4</span><i class='tk' style='--t:4.50'></i><span class='v'>14</span><span class='sr'>15.05: PIR 14 - משחק טוב</span></li><li class='g'><span class='bar' aria-hidden='true'>6<br>6<br>6</span><i class='tk' style='--t:5.20'></i><span class='v'>6</span><span class='sr'>19.05: PIR 6</span></li><li class='g ok'><span class='bar' aria-hidden='true'>6<br>6<br>6<br>6<br>6<br>6<br>6<br>6</span><i class='tk' style='--t:4.75'></i><span class='v'>16</span><span class='sr'>24.05: PIR 16 - משחק טוב</span></li><li class='g ok'><span class='bar' aria-hidden='true'>7<br>7<br>7<br>7<br>7<br>7<br>7<br>7<br>7<br>7<br>7<br>7<br>7<br>7</span><i class='tk' style='--t:4.50'></i><span class='v'>27</span><span class='sr'>27.05: PIR 27 - משחק טוב</span></li></ol><figcaption>ניתאי רוזנברג · עונת 2025/26 · מדד PIR בכל משחק לפי הנתונים הרשמיים. עמודה כתומה = משחק טוב (מעל ממוצע 10 המשחקים הקודמים פחות 1).</figcaption></figure></article><article class='item'><div class='itxt'><h3>דף שחקן וסקאוט</h3><span class='goal'>להיראות</span><p>הנתונים, החוזקות והמהלכים שלך בדף אחד - לשלוח למאמן, למועדון או לסוכן.</p></div><figure class='m m-page'><img src='/brand/landing_scout.jpg' alt='דף הסקאוט של ניתאי רוזנברג' loading='lazy' width='760' height='410'></figure><div class='statrow'><span><b class='num'>36</b>משחקים</span><span><b class='num'>9.8</b>נק&#x27; למשחק</span><span><b class='num'>9.6</b>PIR למשחק</span><span><b class='num'>30</b>שיא PIR</span></div><a class='lnk' href='/Nitai-Rosenberg-izfvey/scout-he.html'>ראו תיק אמיתי <svg class='ar' viewBox='0 0 20 12' width='20' height='12' aria-hidden='true'><path d='M19 6H2M7 1 2 6l5 5' fill='none' stroke='currentColor' stroke-width='1.8'/></svg></a></article></div>
+  </div>
+</div></section>
+<section id="price"><div class="wrap">
+  <div class="sh"><h2 class="h2">מחירים</h2><p class="scope">המחירים הם לקליפים ממשחקי ליגה לאומית לגברים וליגת העל לנשים - שם יש שידור ונתונים רשמיים שמאפשרים שירות מהיר. ליגות אחרות - בפנייה אישית.</p></div>
+  <div class="sb">
+  <p class="founders">מייסדים: 10 המנויים הראשונים מקבלים 30% הנחה עד סוף העונה הנוכחית - חודשי 174 ₪ במקום 249 ₪, עונתי 1,225 ₪ במקום 1,750 ₪.</p>
+  <div class="plans"><div class='prows'><div class='prow'><h3>מנוי חודשי</h3><p class='pr'><b class='num'>249</b><span>₪ לחודש</span></p><p class='pn'>בלי התחייבות - ביטול בכל חודש</p><p class='pl'>חודש בלי משחקים (פגרה, פציעה) - בלי תשלום</p></div><div class='prow best'><h3>מנוי עונתי <span class='badge'>הכי משתלם</span></h3><p class='pr'><b class='num'>1,750</b><span>₪ לעונה</span></p><p class='pn'>9 חודשים במחיר 7 · כולל סרטון עונתי</p><p class='pl'>חודש שלם בלי משחקים בגלל פציעה - החזר או זיכוי של 194 ₪ בסוף העונה</p></div></div><ul class='inc'><li>היילייטס מהמשחקים הטובים שלך</li><li>רילסים ממשחקים</li><li>דוחות ודף שחקן אחרי כל משחק</li><li>תמונת שיא - כשיש נתון בולט</li><li>חודש בלי משחק מעל הרף - סרטון סיכום חודשי או היילייטס ממשחק לבחירה</li></ul><a class='btn' href='#join'>אני רוצה להצטרף</a></div>
+  <p class="fine">במנוי העונתי: פגרות הליגה כבר כלולות בהנחה (9 חודשים במחיר 7). החזר או זיכוי - על חודש קלנדרי שלם שבו לא שיחקת בגלל פציעה, לבחירתך.</p>
+  <h3 class="tbl-h">רק דף שחקן ודוחות (בלי וידאו)</h3>
+  <table><tbody><tr><th scope='row'>דף שחקן ודוחות - חודשי<small>דף שחקן, דף סקאוט, דוח מגמה ודוח משחק - מתעדכנים אחרי כל משחק</small></th><td>79 ₪ לחודש</td></tr><tr><th scope='row'>תיק שחקן - חד פעמי<small>דף שחקן וסקאוט מעודכנים ליום הרכישה, באוויר 90 יום - למי שמחפש קבוצה או מדבר עם סוכן</small></th><td>149 ₪</td></tr></tbody></table>
+  <h3 class="tbl-h">בלי מנוי</h3><table><tbody><tr><th scope='row'>היילייטס ממשחק לבחירתך</th><td>90 ₪</td></tr><tr><th scope='row'>רילס בודד</th><td>45 ₪</td></tr><tr><th scope='row'>היילייטס + רילס מאותו משחק</th><td>119 ₪</td></tr><tr><th scope='row'>חבילת 5 היילייטס מ-5 משחקים לבחירה</th><td>429 ₪</td></tr><tr><th scope='row'>חבילת 10 היילייטס מ-10 משחקים לבחירה</th><td>829 ₪</td></tr><tr><th scope='row'>חבילת 5 היילייטס + רילס לכל משחק</th><td>549 ₪</td></tr><tr><th scope='row'>חבילת 10 היילייטס + רילס לכל משחק</th><td>990 ₪</td></tr><tr><th scope='row'>סרטון טורניר (נבחרת / אליפות)</th><td>290 ₪</td></tr><tr><th scope='row'>סרטון חצי עונה</th><td>350 ₪</td></tr><tr><th scope='row'>סרטון עונה</th><td>450 ₪</td></tr><tr><th scope='row'>קליפ לאורך (9:16) - מותאם לטיקטוק, לאינסטגרם ולרילס</th><td>109 ₪</td></tr><tr><th scope='row'>קליפ הגנה עם סימון השחקן - לפי בקשה</th><td>149 ₪</td></tr><tr><th scope='row'>כל המהלכים ממשחק (כולל החטאות) - לפי בקשה</th><td>90 ₪</td></tr></tbody></table><p class="fine">קנייה בודדת היא הסרטון בלבד - בלי דוחות, דף שחקן, תמונות שיא ושאר השירותים שבמנוי. למנויים: קליפ לאורך בתוספת 19 ₪ למשחק, קליפ הגנה ממוקד ב-129 ₪, קליפ &quot;כל המהלכים&quot; אפשרי במקום ההיילייטס ללא תוספת תשלום או בנוסף להיילייטס בתוספת 19 ₪.</p>
+  </div>
+</div></section>
+<section id="risk"><div class="wrap">
+  <div class="sh"><h2 class="h2">לא השתכנעת עדיין?</h2><p class="lede">קבל היילייט לדוגמה או דף שחקן זמני - בחינם, בלי התחייבות.</p></div>
+  <div class="sb"><ul class="risk"><li><h3>היילייט לדוגמה</h3><p>סרטון אחד ממשחק לבחירתך, כדי לראות בדיוק מה מקבלים.</p></li><li><h3>דף שחקן זמני</h3><p>הדף האישי שלך עם הנתונים והדוחות - ל-3 ימים בחינם, להתנסות.</p></li><li><h3>חודש ראשון עם אפשרות להחזר</h3><p>לא מרוצה מהחודש הראשון במנוי? מקבלים החזר מלא.</p></li></ul>
+  <div class="trust"><h3>הדף שלך - בשליטה שלך</h3><p>הדף שלך לא מופיע בגוגל - רק מי שקיבל ממך את הקישור רואה אותו. רוצה להסיר אותו? הודעה אחת אלינו, והוא יורד תוך 24 שעות.</p></div></div>
+</div></section>
+<section id="about"><div class="wrap about">
+  <div class="sh"><h2 class="h2">מי אני</h2></div>
+  <div class="sb"><div class="me"><b>יואלי זיו</b><span>מייסד ClipIQ · מדיה, וידאו וטכנולוגיה</span></div><div><p>בעונת 2025/26 ליוויתי שחקן בליגה הלאומית. אחרי כל משחק הוא היה יושב מול השידור ומקליט את מסך הטלפון, רק כדי לשמור לעצמו כמה קטעים - ללמוד, להשתפר ולשתף.</p><p>הצעתי לו עזרה, ומשם זה רק גדל: קודם קטעים מסודרים, אחר כך סרטוני היילייטס מקצועיים ומושקעים ובסוף גם ניתוחים של כל משחק שיחד פתחו לו דלתות.</p><p>בשלב מסוים הבנתי שזה לא צורך של שחקן אחד, אלא של כמעט כל שחקן בארץ. אז בניתי את ClipIQ - כדי שכל שחקן יוכל לקבל את התוצר המושקע, בלי לשבת שעות מול המסך.</p></div></div>
+</div></section>
+<section id="join" class="join"><div class="wrap">
+  <div class="sh"><h2 class="h2">בוא נתחיל</h2><p class="lede">כמה פרטים, וממשיכים בוואטסאפ.</p></div>
+  <div class="sb">
+  <form id="joinf" onsubmit="return cqSend(event)">
+    <label class="f">שם מלא<input type="text" name="name" autocomplete="name" required></label>
+    <label class="f">קבוצה וליגה<input type="text" name="team" autocomplete="organization"></label>
+    <fieldset><legend>מה מעניין אותך?</legend><label class='opt'><input type='radio' name='want' value='sample' checked><span>היילייט לדוגמה</span></label><label class='opt'><input type='radio' name='want' value='temp'><span>דף שחקן זמני</span></label><label class='opt'><input type='radio' name='want' value='sub'><span>מנוי חודשי או עונתי</span></label><label class='opt'><input type='radio' name='want' value='card'><span>חבילת היילייטס או סרטון בודד</span></label></fieldset>
+    <p class="deliver">החומרים - היילייטס, רילסים והקישור לדף שלך - נשלחים אליך בוואטסאפ.</p>
+    <label class="chk"><input type="checkbox" name="terms" id="cqterms"><span>קראתי ואני מסכים/ה ל<a href='#terms'>תנאי השימוש</a> ול<a href='#privacy'>מדיניות הפרטיות</a></span></label>
+    <label class="chk"><input type="checkbox" name="mkt"><span>אשמח לקבל בוואטסאפ גם עדכונים, מבצעים וטיפים (לא חובה)</span></label>
+    <button class="btn" type="submit" id="cqsend" disabled><svg viewBox='0 0 24 24' width='22' height='22' fill='currentColor' aria-hidden='true'><path d='M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.64.07-.3-.15-1.26-.46-2.4-1.48-.89-.79-1.49-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.48 0 1.46 1.07 2.88 1.21 3.07.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.7.63.71.22 1.36.19 1.87.12.57-.09 1.76-.72 2.01-1.41.25-.7.25-1.29.17-1.41-.07-.13-.27-.2-.57-.35M12.05 21.8h-.01a9.87 9.87 0 0 1-5.03-1.38l-.36-.21-3.74.98 1-3.65-.24-.37a9.86 9.86 0 0 1-1.51-5.26c0-5.45 4.44-9.88 9.89-9.88 2.64 0 5.12 1.03 6.99 2.9a9.82 9.82 0 0 1 2.89 6.99c0 5.45-4.44 9.88-9.88 9.88M20.46 3.49A11.82 11.82 0 0 0 12.05 0C5.5 0 .16 5.34.16 11.89c0 2.1.55 4.14 1.59 5.95L.06 24l6.3-1.65a11.88 11.88 0 0 0 5.68 1.45h.01c6.55 0 11.89-5.34 11.89-11.89 0-3.18-1.24-6.16-3.48-8.41'/></svg><span>שליחה בוואטסאפ</span></button>
+    <p class="need" id="cqneed">כדי להמשיך - יש לאשר את התנאים</p>
+  </form>
+  </div>
+</div></section>
+<section class="faq"><div class="wrap">
+  <div class="sh"><h2 class="h2">שאלות נפוצות</h2></div>
+  <div class="sb"><details><summary>באילו ליגות?</summary><p>ליגה לאומית לגברים וליגת העל לנשים. ליגת העל לגברים וליגות נוספות - בקרוב.</p></details><details><summary>תוך כמה זמן אחרי המשחק?</summary><p>בדרך כלל תוך יום-יומיים מרגע שהמשחק עולה לשידור.</p></details><details><summary>מה זה &quot;משחק טוב&quot;?</summary><p>משחק שבו מדד היעילות (PIR) שלך הגיע לממוצע שלך או קרוב אליו. הממוצע דינמי: לפני כל משחק הוא מחושב מחדש מ-10 המשחקים האחרונים שלך, והרף הוא הממוצע הזה פחות 1. כך הוא עולה כשאתה משתפר, יורד כשקשה, ותמיד משקף את הכושר שלך העונה. בחודש בלי משחק כזה מקבלים סרטון סיכום חודשי או היילייטס ממשחק לבחירתכם.</p></details><details><summary>איך אני מקבל את החומרים?</summary><p>בוואטסאפ: קישור לדף האישי שלך, שמתעדכן אחרי כל משחק, וההיילייטס והרילסים מוכנים להורדה ולשיתוף. בלי אפליקציה.</p></details><details><summary>ומה אם אין שידור או נתונים למשחק?</summary><p>אם יש נתונים רשמיים אבל אין וידאו, והמשחק עבר את הרף - מקבלים זיכוי: היילייטס ממשחק אחר לבחירתך, תוך 30 יום. אם אין נתונים בכלל, המשחק לא נספר (ואם יש לו וידאו, אפשר לבקש ממנו היילייטס ב-49 ₪). בחודש שבו לא ניתן היה להפיק אף חומר - אין חיוב.</p></details><details><summary>מי רואה את הדף שלי?</summary><p>רק מי שקיבל ממך את הקישור. הדף לא מופיע בגוגל, ואפשר להסיר אותו תוך 24 שעות בהודעה אחת.</p></details><details><summary>אני לא קולע הרבה - זה בשבילי?</summary><p>כן. אנחנו מסתכלים על כל מה שאתה תורם: אסיסטים, ריבאונדים, הגנה ויעילות - לא רק נקודות.</p></details><details><summary>הנתונים אמינים?</summary><p>הנתונים מוצלבים מול הרישום הרשמי של איגוד הכדורסל, וכל משחק בדף מקושר לבוקס הרשמי.</p></details><details><summary>אפשר גם באנגלית?</summary><p>כן. כל הדפים בעברית ובאנגלית - למאמנים ולמועדונים גם בחו&quot;ל.</p></details></div>
+</div></section>
+<div class="end"><div class="wrap">
+  <h2 class="h2">בוא נתחיל עם המשחק הבא שלך</h2>
+  <a class='btn' href='#join'>אני רוצה להצטרף</a>
+  <a class="clubs" href="https://wa.me/972523114001?text=%D7%94%D7%99%D7%99%2C%20%D7%90%D7%A0%D7%99%20%D7%9E___%20%28%D7%9C%D7%99%D7%92%D7%94%20/%20%D7%9E%D7%95%D7%A2%D7%93%D7%95%D7%9F%20/%20%D7%A1%D7%95%D7%9B%D7%A0%D7%95%D7%AA%29.%20%D7%A8%D7%95%D7%A6%D7%94%20%D7%9C%D7%A9%D7%9E%D7%95%D7%A2%20%D7%A2%D7%9C%20%D7%A9%D7%99%D7%AA%D7%95%D7%A3%20%D7%A4%D7%A2%D7%95%D7%9C%D7%94%20%D7%A2%D7%9D%20ClipIQ." target="_blank" rel="noopener">ליגה, מועדון או סוכן? בואו נדבר <svg class='ar' viewBox='0 0 20 12' width='20' height='12' aria-hidden='true'><path d='M19 6H2M7 1 2 6l5 5' fill='none' stroke='currentColor' stroke-width='1.8'/></svg></a>
+</div></div>
+</main>
+<footer><div class="wrap"><div class='socials'><div class='socialbar' style='margin-top:10px;direction:ltr;text-align:center'><a href='https://www.instagram.com/clipiq.il' target='_blank' rel='noopener' title='Instagram' aria-label='Instagram' style='display:inline-flex;align-items:center;justify-content:center;text-decoration:none;color:#e6ebf2;background:rgba(255,255,255,.08);border-radius:50%;width:36px;height:36px;margin-inline-end:8px'><svg viewBox='0 0 24 24' width='20' height='20' fill='currentColor' aria-hidden='true' style='display:block'><path d='M7.0301.084c-1.2768.0602-2.1487.264-2.911.5634-.7888.3075-1.4575.72-2.1228 1.3877-.6652.6677-1.075 1.3368-1.3802 2.127-.2954.7638-.4956 1.6365-.552 2.914-.0564 1.2775-.0689 1.6882-.0626 4.947.0062 3.2586.0206 3.6671.0825 4.9473.061 1.2765.264 2.1482.5635 2.9107.308.7889.72 1.4573 1.388 2.1228.6679.6655 1.3365 1.0743 2.1285 1.38.7632.295 1.6361.4961 2.9134.552 1.2773.056 1.6884.069 4.9462.0627 3.2578-.0062 3.668-.0207 4.9478-.0814 1.28-.0607 2.147-.2652 2.9098-.5633.7889-.3086 1.4578-.72 2.1228-1.3881.665-.6682 1.0745-1.3378 1.3795-2.1284.2957-.7632.4966-1.636.552-2.9124.056-1.2809.0692-1.6898.063-4.948-.0063-3.2583-.021-3.6668-.0817-4.9465-.0607-1.2797-.264-2.1487-.5633-2.9117-.3084-.7889-.72-1.4568-1.3876-2.1228C21.2982 1.33 20.628.9208 19.8378.6165 19.074.321 18.2017.1197 16.9244.0645 15.6471.0093 15.236-.005 11.977.0014 8.718.0076 8.31.0215 7.0301.0839m.1402 21.6932c-1.17-.0509-1.8053-.2453-2.2287-.408-.5606-.216-.96-.4771-1.3819-.895-.422-.4178-.6811-.8186-.9-1.378-.1644-.4234-.3624-1.058-.4171-2.228-.0595-1.2645-.072-1.6442-.079-4.848-.007-3.2037.0053-3.583.0607-4.848.05-1.169.2456-1.805.408-2.2282.216-.5613.4762-.96.895-1.3816.4188-.4217.8184-.6814 1.3783-.9003.423-.1651 1.0575-.3614 2.227-.4171 1.2655-.06 1.6447-.072 4.848-.079 3.2033-.007 3.5835.005 4.8495.0608 1.169.0508 1.8053.2445 2.228.408.5608.216.96.4754 1.3816.895.4217.4194.6816.8176.9005 1.3787.1653.4217.3617 1.056.4169 2.2263.0602 1.2655.0739 1.645.0796 4.848.0058 3.203-.0055 3.5834-.061 4.848-.051 1.17-.245 1.8055-.408 2.2294-.216.5604-.4763.96-.8954 1.3814-.419.4215-.8181.6811-1.3783.9-.4224.1649-1.0577.3617-2.2262.4174-1.2656.0595-1.6448.072-4.8493.079-3.2045.007-3.5825-.006-4.848-.0608M16.953 5.5864A1.44 1.44 0 1 0 18.39 4.144a1.44 1.44 0 0 0-1.437 1.4424M5.8385 12.012c.0067 3.4032 2.7706 6.1557 6.173 6.1493 3.4026-.0065 6.157-2.7701 6.1506-6.1733-.0065-3.4032-2.771-6.1565-6.174-6.1498-3.403.0067-6.156 2.771-6.1496 6.1738M8 12.0077a4 4 0 1 1 4.008 3.9921A3.9996 3.9996 0 0 1 8 12.0077'/></svg></a><a href='https://www.tiktok.com/@clipiq.il' target='_blank' rel='noopener' title='TikTok' aria-label='TikTok' style='display:inline-flex;align-items:center;justify-content:center;text-decoration:none;color:#e6ebf2;background:rgba(255,255,255,.08);border-radius:50%;width:36px;height:36px;margin-inline-end:8px'><svg viewBox='0 0 24 24' width='20' height='20' fill='currentColor' aria-hidden='true' style='display:block'><path d='M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z'/></svg></a><a href='https://www.youtube.com/@ClipIQil' target='_blank' rel='noopener' title='YouTube' aria-label='YouTube' style='display:inline-flex;align-items:center;justify-content:center;text-decoration:none;color:#e6ebf2;background:rgba(255,255,255,.08);border-radius:50%;width:36px;height:36px;margin-inline-end:8px'><svg viewBox='0 0 24 24' width='20' height='20' fill='currentColor' aria-hidden='true' style='display:block'><path d='M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z'/></svg></a></div></div>
+  <details id="terms"><summary>תנאי שימוש (טיוטה)</summary><div><ul><li><b>מי נותן את השירות.</b> יואלי זיו - י.ז ספורט ומדיה. יצירת קשר בוואטסאפ.</li><li><b>מה כולל המנוי.</b> היילייטס מכל &quot;משחק טוב&quot; - משחק שבו מדד היעילות (PIR) הגיע לממוצע 10 המשחקים האחרונים שלך פחות 1 ומעלה; רילס מכל משחק שיש בו מהלך מתאים או מהלך שבחרת; תמונת שיא כשיש נתון בולט; דוחות ודף שחקן אחרי כל משחק. בחודש בלי משחק טוב - סרטון סיכום חודשי או היילייטס ממשחק לבחירה.</li><li><b>כשאין וידאו או נתונים.</b> חומרים מופקים ממשחק שיש לו שידור. משחק עם נתונים רשמיים ובלי וידאו (לא שודר או שהשידור נקטע) שעבר את הרף - מזכה בהיילייטס ממשחק אחר לבחירת השחקן, תוך 30 יום. משחק בלי נתונים רשמיים לא נספר; אם יש לו וידאו, אפשר לבקש ממנו היילייטס ב-49 ₪. בחודש שבו לא ניתן היה להפיק אף חומר - אין חיוב.</li><li><b>חיוב, ביטול והקפאה.</b> מנוי חודשי מתחדש כל חודש ואפשר לבטל בכל עת, לסוף החודש; בחודש בלי משחקים המנוי מוקפא ואין חיוב. מנוי עונתי משולם מראש לעונה; פגרות הליגה כבר כלולות בהנחה (9 חודשים במחיר 7). על כל חודש קלנדרי שלם שבו השחקן לא שיחק בגלל פציעה - החזר של 194 ₪ בסוף העונה, או זיכוי באותו סכום למוצרים בודדים, לבחירתו.</li><li><b>קנייה בודדת.</b> מוצר בודד או חבילה כוללים את הסרטונים בלבד - בלי דוחות, דף שחקן, תמונות שיא ושאר השירותים שבמנוי. חבילה בתוקף עד סוף העונה.</li><li><b>דף שחקן ודוחות.</b> המוצר החודשי כולל דפים ודוחות שמתעדכנים אחרי כל משחק, בלי וידאו; מתחדש כל חודש ואפשר לבטל בכל עת. תיק השחקן החד פעמי מעודכן ליום הרכישה ונשאר באוויר 90 יום.</li><li><b>מבצע מייסדים.</b> 10 המנויים הראשונים מקבלים 30% הנחה עד סוף העונה הנוכחית, בחודשי ובעונתי. אחרי ביטול - הצטרפות מחדש במחיר הרגיל.</li><li><b>חודש ראשון.</b> לא מרוצה מהחודש הראשון במנוי? מקבלים החזר מלא.</li><li><b>שימוש בחומרים.</b> החומרים מיועדים לשימוש האישי שלך, כולל שיתוף ברשתות. אתה מסכים ש-ClipIQ תשתמש בחומרים שהופקו עבורך גם בערוצים שלה (אינסטגרם, טיקטוק, יוטיוב ואחרים) לקידום השירות. אפשר לבקש בכל עת שלא נשתמש בחומרים שלך, והם יוסרו.</li><li><b>דיוק.</b> הנתונים מבוססים על הרישום הרשמי של איגוד הכדורסל ומנהלת הליגה. אנחנו עושים כל מאמץ לדיוק, אבל טעויות במקור עלולות להופיע גם אצלנו.</li><li><b>הסרה.</b> הדף האישי והחומרים יורדים מהאתר תוך 24 שעות מבקשה.</li><li><b>זכויות יוצרים.</b> העיצוב, אופן הצגת הנתונים, הגרפים, הגרפיקה והקוד באתר, בדפי השחקנים ובדפי הסקאוט שייכים ל-ClipIQ. אין להעתיק, לשכפל, לחקות, או לצלם מסך לשימוש מסחרי - בלי אישור מפורש בכתב. הנתונים עצמם מקורם באתרי האיגוד ומנהלת הליגה. שחקן רשאי לשתף את הדף והחומרים שלו לשימוש אישי.</li><li>זוהי טיוטה. הנוסח המחייב יפורסם לפני תחילת החיוב.</li></ul></div></details>
+  <details id="privacy"><summary>מדיניות פרטיות</summary><div><p>ClipIQ משתמשת בנתוני-משחק שמתפרסמים באתרי איגוד הכדורסל ומנהלת הליגה, ובווידאו מהשידור הרשמי של המשחקים. הדף האישי נבנה רק לשחקן שביקש אותו, מסומן כך שמנועי חיפוש לא יאנדקסו אותו, ונגיש רק למי שקיבל את הקישור. האתר סופר צפיות בדפים בלבד - בלי עוגיות, בלי כתובות IP ובלי פרטים מזהים. הטופס בדף לא שומר שום מידע - הוא רק מכין הודעת וואטסאפ. פנייה בוואטסאפ נשמרת רק לצורך מתן השירות. להסרת דף או מידע - הודעה אחת, והוא יורד תוך 24 שעות.</p></div></details>
+  <details id="a11y"><summary>הצהרת נגישות</summary><div><p>אנחנו פועלים כדי שהאתר יהיה נגיש לכולם, לפי תקן ישראלי 5568 והנחיות WCAG 2.1 ברמה AA: מבנה כותרות, ניגודיות גבוהה, טקסט חלופי, ניווט במקלדת ותמיכה בהגדלת טקסט. מה עוד לא נגיש: הסרטונים הם קטעי משחק עם מוזיקה בלבד, בלי דיבור, ולכן אין בהם כתוביות; קובצי ה-PDF בדפי השחקנים עוד לא נבדקו לנגישות מלאה. רכז הנגישות: יואלי זיו - yoeli.ziv@gmail.com או בוואטסאפ. נתקלתם בקושי? כתבו לנו ונטפל בזה. ההצהרה עודכנה ב-07/10/2026.</p></div></details>
+  <p class="biz">© 2026 ClipIQ · כל הזכויות שמורות · clipiq.co.il<br>יואלי זיו - י.ז ספורט ומדיה</p>
+</div></footer>
+<div class="stick" id="stick"><a class='btn' href='#join'>אני רוצה להצטרף</a></div>
+<script>
+(function(){
+  var PBP=[[4, "00:01", 0], [4, "00:02", 0], [4, "00:42", 0], [4, "00:42", 3], [4, "01:24", 0], [4, "02:08", 0], [4, "02:40", 2], [4, "02:48", 0], [4, "03:00", 2], [4, "03:05", 0], [4, "04:16", 0], [4, "04:41", 2], [4, "05:52", 2], [4, "07:23", 0], [4, "07:31", 0], [4, "08:43", 0], [4, "08:54", 0], [4, "08:58", 0], [4, "09:41", 3], [1, "06:02", 0], [1, "07:05", 0]];
+  // the digit stream: quarter, clock, points - Nitai's official play-by-play from the reel's game
+  var STREAM=PBP.map(function(r){return r[0]+r[1].replace(':','')+r[2]}).join('').split('');
+  var BGLINE=PBP.map(function(r){return r[0]+' '+r[1]+' +'+r[2]}).join('   ')+'   ';
+  var reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var FONT='Martian, monospace';
+
+  // glyph engine: draws any video/image as digits; dark shapes + edges + motion carry the figure
+  function Glyphs(cv,media){
+    this.cv=cv;this.ctx=cv.getContext('2d');this.media=media;
+    this.samp=document.createElement('canvas');this.sx=this.samp.getContext('2d',{willReadFrequently:true});
+    this.bg=document.createElement('canvas');this.bx=this.bg.getContext('2d');
+    this.win={x:0,y:0,w:0,h:0};this.masks=[];this.cell=12;this.prev=null;this.mot=null;this.focusY=0.5;
+    this.still=media.tagName==='IMG';
+  }
+  Glyphs.prototype.size=function(W,H){var d=Math.min(devicePixelRatio||1,2);this.W=W;this.H=H;this.dpr=d;
+    this.cv.width=W*d;this.cv.height=H*d;this.bg.width=W*d;this.bg.height=H*d};
+  Glyphs.prototype.masked=function(x,y,c){var m=this.masks;for(var k=0;k<m.length;k++){var q=m[k];
+    if(x+c>q.x&&x<q.x+q.w&&y+this.cell>q.y&&y<q.y+q.h)return true}return false};
+  Glyphs.prototype.drawBg=function(on){var b=this.bx,c=this.cell*0.64,W=this.W,H=this.H;
+    b.setTransform(this.dpr,0,0,this.dpr,0,0);b.clearRect(0,0,W,H);b.direction='ltr';if(!on)return;
+    b.font=(this.overlay?'600 ':'400 ')+(this.cell*0.86).toFixed(1)+'px '+FONT;b.textBaseline='top';b.fillStyle=this.overlay?'rgba(255,226,196,0.2)':'rgba(169,182,211,0.12)';
+    var w=this.win,rows=Math.ceil(H/this.cell),cols=Math.ceil(W/c);
+    for(var r=0;r<rows;r++)for(var i=0;i<cols;i++){var x=i*c,y=r*this.cell;
+      if(!this.overlay&&x+c>w.x&&x<w.x+w.w&&y<w.y+w.h)continue;if(this.masked(x,y,c))continue;
+      var ch=BGLINE[(r*7+i)%BGLINE.length];if(ch!==' ')b.fillText(ch,x,y)}};
+  Glyphs.prototype.source=function(){var m=this.media;
+    if(m.tagName==='VIDEO'){if(m.readyState>=2&&!reduce)return m;var p=m._poster;
+      if(!p){p=m._poster=new Image();p.src=m.getAttribute('poster')}return p.complete&&p.naturalWidth?p:null}
+    return m.complete&&m.naturalWidth?m:null};
+  Glyphs.prototype.draw=function(){if(!this.W||!this.H)return;
+    var x=this.ctx,W=this.W,H=this.H,s=this.source(),w=this.win,cell=this.cell,c=cell*0.64;
+    x.setTransform(this.dpr,0,0,this.dpr,0,0);x.clearRect(0,0,W,H);x.direction='ltr';
+    var lvl=this.overlay?this.level:1;
+    if(this.overlay){// the play-by-play feed scrolls up over the whole field; none at the video end
+      var off=(performance.now()*0.018)%H;x.globalAlpha=Math.min(1,lvl*1.25);
+      x.drawImage(this.bg,0,-off,W,H);x.drawImage(this.bg,0,H-off,W,H);x.globalAlpha=1;
+      if(lvl<=0.02)return}
+    else x.drawImage(this.bg,0,0,W,H);
+    if(!s)return;
+    var cols=Math.max(1,Math.floor(w.w/c)),rows=Math.max(1,Math.floor(w.h/cell)),n=cols*rows;
+    if(this.samp.width!==cols||this.samp.height!==rows){this.samp.width=cols;this.samp.height=rows;this.prev=null}
+    var sw=s.videoWidth||s.naturalWidth,sh=s.videoHeight||s.naturalHeight,ta=cols*c/(rows*cell),sa=sw/sh,cw=sw,ch=sh,ox=0,oy=0;
+    if(sa>ta){cw=sh*ta;ox=(sw-cw)/2}else{ch=sw/ta;oy=Math.min(sh-ch,Math.max(0,sh*this.focusY-ch/2))}
+    if(this.track&&s.tagName==='VIDEO'){var f=this.track(s.currentTime);cw/=f.z;ch/=f.z;
+      ox=Math.min(sw-cw,Math.max(0,sw*f.x-cw/2));oy=Math.min(sh-ch,Math.max(0,sh*f.y-ch/2))}
+    this.sx.drawImage(s,ox,oy,cw,ch,0,0,cols,rows);
+    var d;try{d=this.sx.getImageData(0,0,cols,rows).data}catch(err){return}
+    var L=new Float32Array(n);
+    for(var q=0;q<n;q++){var p=q*4;L[q]=(0.2126*d[p]+0.7152*d[p+1]+0.0722*d[p+2])/255}
+    var moving=!this.still&&s.tagName==='VIDEO';
+    if(!this.prev||this.prev.length!==n){this.prev=L;this.mot=new Float32Array(n)}
+    var B=[[],[],[],[],[]],P=this.prev,M=this.mot,gm=0;
+    // camera pans and zooms move every pixel: subtract the frame's mean change so only players count as motion
+    if(moving){for(var q2=0;q2<n;q2++)gm+=Math.abs(L[q2]-P[q2]);gm/=n}
+    for(var r=0;r<rows;r++)for(var i=0;i<cols;i++){var k=r*cols+i,l=L[k],lr=i<cols-1?L[k+1]:l,ld=r<rows-1?L[k+cols]:l;
+      var ed=(Math.abs(l-lr)+Math.abs(l-ld))*3,dk=(0.55-l)/0.4,v;
+      if(moving){M[k]=Math.max((Math.abs(l-P[k])-gm*1.6)*10,M[k]*0.8);v=this.overlay?Math.max(M[k],ed*0.22):Math.max(M[k],ed*0.4,dk*0.18)}
+      else v=this.overlay?ed*0.5:Math.max(ed*1.1,dk*0.25);
+      if(l>0.58)v*=0.3; // the bright floor and walls stay sparse
+      if(this.overlay)v*=0.45+lvl*0.9;
+      if(v<=0.1)continue;v=Math.min(1,Math.pow(v,0.85));
+      var gx=w.x+i*c,gy=w.y+r*cell;if(this.masks.length&&this.masked(gx,gy,c))continue;
+      B[Math.min(4,(v*5)|0)].push(gx,gy,k)}
+    this.prev=L;
+    x.textBaseline='top';var fs=(cell*0.9).toFixed(1),sl=STREAM.length;if(this.overlay)x.globalAlpha=Math.min(1,0.15+0.95*lvl);
+    for(var b=0;b<5;b++){var a=B[b];if(!a.length)continue;
+      x.font=(b>=3?'800 ':b>=1?'500 ':'200 ')+fs+'px '+FONT;
+      x.fillStyle=b===4?'#ffe2c4':'rgba(235,133,33,'+(0.22+b*0.19).toFixed(2)+')';
+      for(var j=0;j<a.length;j+=3)x.fillText(STREAM[a[j+2]%sl],a[j],a[j+1])}
+    x.globalAlpha=1;
+  };
+
+  // hero: the resolution handle
+  var field=document.getElementById('field'),hv=document.getElementById('reel'),res=document.getElementById('res');
+  var copy=document.getElementById('copy'),dock=document.getElementById('dock'),read=document.getElementById('read');
+  var G=new Glyphs(document.getElementById('glyphs'),hv);G.focusY=0.6;G.overlay=true;G.level=0.4;
+
+  var desk=false,heroOn=true;
+  function rect(el){var f=field.getBoundingClientRect(),r=el.getBoundingClientRect();
+    return {x:r.left-f.left-12,y:r.top-f.top-6,w:r.width+24,h:r.height+12}}
+  function layout(){
+    desk=innerWidth>=900;dock.style.cssText='';
+    var W=field.clientWidth,H=field.clientHeight;G.size(W,H);
+    if(desk){var A=+field.getAttribute('data-aspect')||1.02,h0=H-dock.offsetHeight-48,
+      ww=Math.round(Math.min(W*0.5-64,h0*A)),wh=Math.round(Math.min(h0,ww/A)),y0=Math.round((h0-wh)/2);
+      var rtl=document.documentElement.dir==='rtl';
+      G.win={x:rtl?Math.round(W*0.04):Math.round(W*0.96-ww),y:y0,w:ww,h:wh};
+      dock.style.left=G.win.x+'px';dock.style.top=(y0+wh+20)+'px';dock.style.width=ww+'px';
+      G.masks=[rect(copy)];}
+    else{G.win={x:0,y:0,w:W,h:H};G.masks=[rect(read)];}
+    var w=G.win;hv.style.left=w.x+'px';hv.style.top=w.y+'px';hv.style.width=w.w+'px';hv.style.height=w.h+'px';
+    setRes();
+  }
+  // the handle: from the clean move (video) to the move carrying its data
+  function setRes(){var v=+res.value/100;
+    G.level=v;G.cell=desk?11:9;hv.style.filter='brightness('+(1-0.5*v).toFixed(2)+')';
+    res.setAttribute('aria-valuetext',v<0.08?'וידאו':v>0.92?'נתונים':'וידאו ונתונים');
+    G.drawBg(true);G.draw();
+  }
+  res.addEventListener('input',setRes);
+  addEventListener('resize',function(){clearTimeout(layout.t);layout.t=setTimeout(layout,120)});
+  new IntersectionObserver(function(en){heroOn=en[0].isIntersecting;
+    if(!reduce){heroOn?hv.play().catch(function(){}):hv.pause()}},{threshold:0.05}).observe(field);
+  hv.addEventListener('loadeddata',function(){G.draw()});
+
+  // deliverables: the same overlay - the real media in full, its data running over it
+  var items=[];
+  document.querySelectorAll('[data-glyph]').forEach(function(fig){
+    if(reduce)return;var m=fig.querySelector('video,img');
+    var cv=document.createElement('canvas');cv.setAttribute('aria-hidden','true');fig.appendChild(cv);
+    var g=new Glyphs(cv,m);g.focusY=0.55;g.overlay=true;g.level=0.4;items.push({fig:fig,m:m,g:g,on:false});
+  });
+  function sizeItems(){items.forEach(function(it){var W=it.fig.clientWidth,H=it.fig.clientHeight;it.g.size(W,H);
+    it.g.win={x:0,y:0,w:W,h:H};it.g.cell=8;it.g.drawBg(true);it.g.draw()})}
+  var io=new IntersectionObserver(function(en){en.forEach(function(x){
+    var it=null;for(var q=0;q<items.length;q++)if(items[q].fig===x.target)it=items[q];
+    var m=x.target.querySelector('video,img');
+    if(x.isIntersecting){if(m.tagName==='VIDEO'){if(m.preload==='none')m.preload='auto';if(!reduce)m.play().catch(function(){})}if(it)it.on=true}
+    else{if(m.tagName==='VIDEO')m.pause();if(it)it.on=false}})},{threshold:0.2});
+  document.querySelectorAll('.m video,.m img').forEach(function(m){io.observe(m.closest('.m'))});
+
+  var last=0;
+  function loop(t){
+    if(t-last>40){last=t;
+      if(heroOn&&!document.hidden)G.draw();
+      if(!document.hidden)items.forEach(function(it){if(it.on)it.g.draw()})}
+    requestAnimationFrame(loop);
+  }
+  (document.fonts?document.fonts.ready:Promise.resolve()).then(function(){
+    layout();sizeItems();
+    if(reduce){hv.pause();return}
+    hv.play().catch(function(){});requestAnimationFrame(loop);
+    // one authored moment: the data settles off the move
+    var to=+res.value,t0=performance.now();res.value=100;setRes();
+    (function ease(t){var k=Math.min(1,(t-t0)/1600),e=1-Math.pow(1-k,4);res.value=100+(to-100)*e;setRes();
+      if(k<1)requestAnimationFrame(ease);else setTimeout(hint,1200)})(t0);
+    // a nudge on the handle until the visitor touches it: data in, data out, back
+    var touched=false,hints=0;
+    ['pointerdown','keydown','touchstart'].forEach(function(ev){res.addEventListener(ev,function(){touched=true},{passive:true})});
+    function hint(){if(touched||hints>=3)return;hints++;var base=+res.value,h0=performance.now();
+      (function w(t){if(touched)return;var k=Math.min(1,(t-h0)/1800);res.value=base+Math.sin(k*Math.PI*2)*28*(1-k*0.3);setRes();
+        if(k<1)requestAnimationFrame(w);else{res.value=base;setRes();setTimeout(hint,6000)}})(h0)}
+  });
+  addEventListener('resize',function(){clearTimeout(sizeItems.t);sizeItems.t=setTimeout(sizeItems,150)});
+
+  // sticky join after the hero
+  var st=document.getElementById('stick'),join=document.getElementById('join'),seen={hero:true,join:false};
+  var so=new IntersectionObserver(function(en){en.forEach(function(x){seen[x.target===join?'join':'hero']=x.isIntersecting});
+    st.classList.toggle('on',!seen.hero&&!seen.join)});
+  so.observe(document.querySelector('.hero'));so.observe(join);
+
+})();
+
+(function(){
+var C={"base": "https://wa.me/972523114001", "t": {"hi": "היי, אני %s", "team": " (%s)", "want": "מעוניין/ת: %s", "ok": "אישרתי את תנאי השימוש ומדיניות הפרטיות.", "mkt_y": "עדכונים ומבצעים: כן", "mkt_n": "עדכונים ומבצעים: לא"}, "w": {"sample": "היילייט לדוגמה", "temp": "דף שחקן זמני", "sub": "מנוי חודשי או עונתי", "card": "חבילת היילייטס או סרטון בודד"}};
+var t=document.getElementById('cqterms'),s=document.getElementById('cqsend'),n=document.getElementById('cqneed');
+function upd(){s.disabled=!t.checked;n.style.visibility=t.checked?'hidden':'visible';}
+t.addEventListener('change',upd);upd();
+window.cqSend=function(ev){ev.preventDefault();var f=document.getElementById('joinf');if(!t.checked)return false;
+ var nm=f.name.value.trim(),tm=f.team.value.trim(),w=(f.querySelector('input[name=want]:checked')||{}).value;
+ var L=[C.t.hi.replace('%s',nm)+(tm?C.t.team.replace('%s',tm):''),C.t.want.replace('%s',C.w[w]||''),C.t.ok,
+  f.mkt.checked?C.t.mkt_y:C.t.mkt_n];
+ try{window.cqCta();}catch(x){}
+ window.open(C.base+'?text='+encodeURIComponent(L.join('\n')),'_blank','noopener');return false;};
+})();
+</script><script>(function(){var A='https://clipiq-counter.clipiq-il.workers.dev',P='landing-he',k='cqv:'+P,s=false;try{s=!!sessionStorage.getItem(k);sessionStorage.setItem(k,'1');}catch(x){}if(!s)fetch(A+'/v?p='+P).catch(function(){});window.cqCta=function(){try{fetch(A+'/s?p='+P,{keepalive:true});}catch(x){}};})();</script></body></html>
